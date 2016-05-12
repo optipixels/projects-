@@ -537,6 +537,16 @@ a img.aligncenter {
 	line-height: 70px;
 	margin: 0;
 }
+.sub-header .next-post{
+	position: absolute;
+	width: 100%;
+	left:100%;
+	top:50px;
+	color: rgba(255,255,255,0.1);
+	line-height: 70px;
+	margin: 0;
+	padding: 0 0 0 60px;
+}
 .sub-header .controls{
 	position: absolute;
 	right: -17px;
