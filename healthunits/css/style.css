@@ -831,7 +831,8 @@ a img.aligncenter {
 	padding: 0;
 	list-style: none;
 	position: absolute;
-	right: 450px;
+	/*right: 450px;*/
+	left:50%;
 	bottom: 40px;
 	text-align: center;
 	z-index: 999;
