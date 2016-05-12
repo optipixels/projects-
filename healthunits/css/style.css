@@ -469,7 +469,7 @@ a img.aligncenter {
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-#nav>ul>.more{float:right;}
+#nav>ul>.more{float:left;}
 #nav>ul>li> .more{ overflow: hidden; }
 #nav>ul>li> .more span{
 	width: 7px;
