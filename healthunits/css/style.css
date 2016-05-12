@@ -1642,6 +1642,7 @@ a img.aligncenter {
 	padding: 30px 30px 30px 80px;
 	margin: 0;
 }
+.newsletter-small-sec form button[type="submit"],
 .newsletter-small-sec form input[type="submit"]{
 	background: #f00;
 	border: none;
