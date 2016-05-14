@@ -1,0 +1,417 @@
+/* ------------ 
+   Google Fonts
+   ------------ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/* ------------------------ 
+   Typography and Reset CSS
+   ------------------------ */
+* { max-height: 100000px; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; }
+body {
+	margin: 0;
+	min-width: 320px;
+	color: #555;
+	font: 16px/24px 'Open Sans', Arial, sans-serif !important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: none;
+	background: #eee;
+}
+img {
+	border-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover,
+a:focus,
+a:active { 
+	color: #000;
+	text-decoration: none;
+}
+*:focus{ outline: none !important; }
+input,
+textarea,
+select {
+	font: 14px/16px 100% 'Open Sans', Arial, sans-serif;
+	vertical-align: middle;
+	color: #555;
+}
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea { -webkit-appearance: none; }
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+::-webkit-input-placeholder { color: #fff; }
+:-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+:-ms-input-placeholder { color: #fff; }
+p{ font-family: 'Open Sans', Arial, sans-serif !important; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #555;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	margin-top: 0px;
+}
+[class*="col-md"], 
+[class*="col-lg"], 
+[class*="col-sm"], 
+[class*="col-xs"] {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin: 0 -4px 0 0;
+}
+#header:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+#header{
+	background: #000;
+	padding: 16px 0;
+}
+#header .logo{
+	float: left;
+}
+#header .nav-area{
+	float: right;
+	padding: 28px 0;
+}
+#nav{ float: left; }
+#nav ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+}
+#nav ul li{
+	float: left;
+	margin: 0 0 0 20px;
+	position: relative;
+}
+#nav ul li.active:after,
+#nav ul li:hover:after{
+	width: 100%;
+}
+#nav ul li:after{
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	width: 0;
+	height: 2px;
+	content: '';
+	background: #ffcb08;
+	 -webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+#nav ul a{
+	color: #ffcb08;
+}
+.nav-area .search-box{
+	float: left;
+	margin: 0 0 0 30px;
+}
+.nav-area .search-box:hover .search-form{
+	opacity: 1;
+	width: 250px;
+}
+.nav-area .search-box .search-form{
+    float: left;
+    opacity: 0;
+    transition: all 0.2s ease-out 0s;
+    width: 0;
+    z-index: 999;
+    padding: 0 16px;
+    -webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+.nav-area .search-box input[type="search"]{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border:none;
+    border-bottom: 1px solid #fff;
+    height: 32px;
+    padding: 0 30px 0 10px;
+    width: 100%;
+}
+.nav-area .search-box input[type="submit"]{ display: none;  }
+.banner-inner{ background: #ffcb08; }
+.banner {
+	background: #ffcb08 url('http://optipixels.com/rfagears/images/banner.png') no-repeat -250px 0;
+	min-height: 577px;
+}
+.banner-inner .desc{ text-align: center; }
+.banner-inner .desc,
+.banner .desc{
+	padding: 80px 0;
+}
+.banner-inner h2{ margin: 0;  }
+.banner-inner h2,
+.banner h2 {
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin:0 0 40px;
+}
+.banner-inner h2 strong,
+.banner h2 strong{
+	font-weight: 700;
+	display: block;
+}
+.banner p {
+    font-size: 24px;
+    text-align: justify;
+    font-weight: 300;
+}
+#main{ padding: 20px 0; }
+#main .title{ 
+	background: url('http://optipixels.com/rfagears/images/widget-title.png') repeat-x 0 50%;
+	margin: 0 0 20px;
+}
+#main .text-block .title h2{ background: #fff; }
+#main .title h2{
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 300;
+	background:#eee;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px 0 0;
+	margin: 0;
+}
+.widget-cat{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+}
+.widget-cat li{
+	border-top:1px solid #ffcb08;
+	background: #000;
+	position: relative;
+}
+.widget-cat li a{ 
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+.widget-cat li a:hover{
+	background: #ffcb08;
+}
+.widget-cat li:after{
+	position: absolute;
+	top:50%;
+	right: 20px;
+	margin: -6px 0 0;
+	color: #fff;
+	width: 8px;
+	height: 12px;
+	content: '';
+	background: url('http://optipixels.com/rfagears/images/ico-arrow.png') no-repeat;
+}
+#main .text-block{
+	background:#fff;
+	padding: 30px;
+}
+#main .text-block h2.main{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0 0 30px;
+}
+#main .text-block p{ 
+	margin: 0 0 24px;
+	font-weight: 300;
+}
+#main .text-block ul.list{
+	margin: 0 0 24px;
+	padding: 0;
+	list-style: none;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+}
+#main .text-block ul.list li{
+	padding: 0 0 0 36px;
+	position: relative;
+	margin: 0 0 5px;
+}
+#main .text-block ul.list li:after{
+	position: absolute;
+	left: 0;
+	top:12px;
+	width: 24px;
+	height: 2px;
+	background:#ffcb08;
+	content: '';
+}
+#main .text-block ul.list span{ 
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+}
+#footer {
+	background: #000;
+	padding: 40px 0;
+	color: #fff;
+}
+#footer .logo{ margin: 0 0 30px; }
+#footer .title{ 
+	background: url('http://optipixels.com/rfagears/images/widget-title2.png') repeat-x 0 50%;
+	margin: 0 0 30px;
+}
+#footer .title h2{
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 300;
+	background:#000;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px 0 0;
+	margin: 0;
+	color:#ffcb08;
+}
+#footer .links{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+}
+#footer .links li{
+	margin: 0 0 10px;
+}
+#footer .links a{
+	color: #fff;
+}
+#footer .links a:hover{
+	color:#ffcb08;
+}
+/* Ebay Styling */
+.cmpBr:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.cmpBr{ 
+	height: auto;
+	background-color: #ffcb08;
+}
+.li td.details div.ttl{ font-size:18px; }
+table.gallery div.ttl{
+	margin:0 0 20px;
+	font-size:18px;
+}
+table.nol td.picture{
+	width: 94px;
+}
+table.gallery table.fixed{ width: 100%;  }
+div.cmpb{
+	background-color: #ffcb08;
+}
+.lview .li{
+	border-collapse: separate;
+	padding: 20px;
+}
+.lview .li td{ vertical-align: middle; }
+@media screen and (max-width: 1199px) {
+	#nav{ display: none; }
+	.slicknav_menu {
+	    display: block;
+	    clear: both;
+	    background: none;
+	    position: relative;
+	    padding: 12px 20px !important;
+	    background: none !important;
+	}
+    .slicknav_menu .slicknav_nav {
+    	background: #fff;
+    	position: relative;
+    	top:7px;
+    	padding: 7px 0 0;
+    }
+    .slicknav_menu .slicknav_nav li { margin: 0 0 10px; }
+    .slicknav_menu .slicknav_nav li>a {
+        border: 2px solid #f00;
+        color: #003655;
+        font-weight: 500;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        margin: 5px 0 !important;
+    }
+    .slicknav_menu .slicknav_nav li>a a{
+    	color: #003655;
+    }
+    .slicknav_menu .slicknav_nav li a:hover a,
+    .slicknav_menu .slicknav_nav li a:hover {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		background: #f00;
+		color: #fff !important;
+	}
+    .slicknav_menu .slicknav_btn {
+	    background-color: #f00;
+	    border-radius: 2px;
+	    margin: 0;
+	    text-decoration: none;
+	    text-shadow: none;
+	    padding: 10px 10px;
+	}
+	.slicknav_nav .slicknav_arrow{
+		font-size: 18px !important;
+		float: right;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	
+}
