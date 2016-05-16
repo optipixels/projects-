@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
     jQuery('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -36,11 +36,11 @@ jQuery(document).ready(function(){
     });
 
     // Masonary
-    jQuery(window).load(function(){
-        jQuery('.post-masonary').isotope({
-          // options
-          itemSelector: '.lists',
-          isOriginLeft: true
-        });
-    });
+//    jQuery(window).load(function(){
+//        jQuery('.post-masonary').isotope({
+//          // options
+//          itemSelector: '.lists',
+//          isOriginLeft: true
+//        });
+//    });
 });
