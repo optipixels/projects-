@@ -106,7 +106,8 @@ h6 {
 }
 #header{
 	background: #000;
-	padding: 16px 0;
+	padding: 16px 9999px;
+	margin: 0 -9999px;
 }
 #header .logo{
 	float: left;
@@ -178,11 +179,17 @@ h6 {
     width: 100%;
 }
 .nav-area .search-box input[type="submit"]{ display: none;  }
-.banner-inner{ background: #ffcb08; }
-.banner {
-	background: #ffcb08 url('http://optipixels.com/rfagears/images/banner.png') no-repeat -250px 0;
-	min-height: 577px;
+.banner-inner{ 
+	background: #ffcb08;
+	margin: 0 -9999px;
+	padding: 0 9999px;
 }
+.banner {
+	background: #ffcb08;
+	margin: 0 -9999px;
+	padding: 0 9999px;
+}
+.banner>.container{ background: #ffcb08 url('http://optipixels.com/rfagears/images/banner.png') no-repeat -250px 0; }
 .banner-inner .desc{ text-align: center; }
 .banner-inner .desc,
 .banner .desc{
@@ -207,6 +214,11 @@ h6 {
     font-weight: 300;
 }
 #main{ padding: 20px 0; }
+#main p,
+#main ul{
+	font-size:16px !important;
+	line-height: 24px !important;
+}
 #main .title{ 
 	background: url('http://optipixels.com/rfagears/images/widget-title.png') repeat-x 0 50%;
 	margin: 0 0 20px;
@@ -227,6 +239,7 @@ h6 {
 	padding:0;
 	list-style: none;
 	font-family: 'Open Sans', Arial, sans-serif !important;
+	font-size:12px !important;
 }
 .widget-cat li{
 	border-top:1px solid #ffcb08;
@@ -298,8 +311,9 @@ h6 {
 }
 #footer {
 	background: #000;
-	padding: 40px 0;
 	color: #fff;
+	margin: 0 -9999px;
+	padding: 40px 9999px;
 }
 #footer .logo{ margin: 0 0 30px; }
 #footer .title{ 
@@ -333,6 +347,11 @@ h6 {
 	color:#ffcb08;
 }
 /* Ebay Styling */
+.pagewidth{ overflow: hidden; }
+.pageminwidth{
+	max-width: 1220px;
+	margin: 0 auto;
+}
 .cmpBr:after{
 	display: block;
 	clear: both;
@@ -346,11 +365,23 @@ h6 {
 table.gallery div.ttl{
 	margin:0 0 20px;
 	font-size:18px;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+	font-weight: 300;
+	padding: 0 15px;
 }
 table.nol td.picture{
 	width: 94px;
 }
-table.gallery table.fixed{ width: 100%;  }
+table.gallery table.fixed{ 
+	width: 100%;
+	padding: 0 15px;
+	border-collapse: separate;
+}
+table.gallery table.fixed span{
+	font-family: 'Open Sans', Arial, sans-serif !important; 
+	font-weight: 400;
+	font-size:16px;
+}
 div.cmpb{
 	background-color: #ffcb08;
 }
@@ -359,6 +390,66 @@ div.cmpb{
 	padding: 20px;
 }
 .lview .li td{ vertical-align: middle; }
+td#CentralArea div.v4stabl{ /*width:790px;*/  margin:0px 0px 0px -65px;  padding:5px 5px;  border:0;  font-size:11px;  color:#000;  display:none; }
+td#CentralArea div.v4stabl a{ color:#000;  display:none; }
+td#CentralArea{margin:-14px 0px 0px -3px !important;  padding:0px !important;  float:left !important;  width:100%; /*width:790px !important;*/ }
+/* Can chage to color */
+td#CentralArea table.v4stw{ width:790px; /*width:100%;*/  margin:0px 0px 0px 0px !important;  padding:0px 0px 0px 0px;  border:0;  background: #ffcb08;/*background:url(images/eservices_ebay_r3_top.png) center top no-repeat;*/  height:33px;  }
+td#CentralArea td.r3_t, .r3_t b, .r3_t i, .r3_bl b, .r3_bl i{ margin:0;  padding:0;  border:0;  background:none; }
+td#CentralArea td.r3_c{ margin:0;  padding:0;  border:0; }
+td#CentralArea div.r3_cm, .bp, .tp{ margin:0;  padding:0;  border:0; }
+td#CentralArea div.fpcc{ width: 847px; background-color: #000; /*margin:0 0 10px 0;  *margin:0 0 5px 0;*/  padding:5px 0; border:1px solid #eee; border-bottom:none;  *padding:0 10px 0px 10px;  border:0;  display:block;  /*height:1px; */ }
+td#CentralArea div.fpcc span.keywordClass{ background-color:transparent;  color:#fff; }
+td#CentralArea div.fpcc .matchClass, .countClass{ color:#fff; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px;}
+td#CentralArea div.fpcc .countClass{ color:#fff;  font-size:14px;  font-weight:bold;  padding-left:10px; }
+/* Can chage to color */
+td#CentralArea .ctrlbr{ /*margin:-4px 0 0 0;*/  padding:6px 10px;  border:0; background:#000; /*background:url(images/eservices_ebay_ctrl_bar_bg.png) no-repeat center top;*/ }
+td#CentralArea span.pdmt {display:block;  float:left;  padding-right:20px}
+span.pdmt .label { line-height: 16px; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px;  color:#fff;  display:block;  float:left;  padding:0; }
+/* Can chage to color */
+td#CentralArea .ctrlbr span.pdmt .cur {background:url(images/gridSelects.gif) no-repeat 0 -35px;  color:#fff; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px; line-height: 16px; display:block;  float:left;  /*height:21px;*/  width:163px;  margin-top:0px;  padding-left:6px; }
+td#CentralArea .ctrlbr span.pdmt:first-child .cur {background-position:0 0; width:134px}
+td#CentralArea .ctrlbr span.pdmt .cur  img {display:none; }
+td#CentralArea div.rs_box{ background-color: #ffcb08; margin:0px 0px 0px 0px;  padding:0; border-width:1px;  border-style:solid;  border-color:#d6d6d6;  clear:both; width:847px; /*width:788px; */}
+td#CentralArea div.rs_box span.pdmt .label{ color:#fff; }
+td#CentralArea div.rs_box span.pdmt .cur{ color:#fff;}
+/* Can chage to color */
+td#CentralArea div.rs_box .cmpBr{ margin:0;  padding:0;  border:0;  color:#fff;  background:url(images/black_bg.png) no-repeat center top;  height:28px;  display:none !important; }
+td#CentralArea div.rs_box .cmpBr a{ color:#fff; }
+/* Can chage to color */
+td#CentralArea td.r3_bl{ margin:0;  padding:0;  border:0;  background:url(images/r3_bottom.png) left bottom no-repeat;  height:10px; }
+td#CentralArea div.itemseparator{ margin:0;  padding:0px 0;  border:0; }
+div.ttl.g-std{margin:0px;  padding:0px;  font-family:Arial, Helvetica, sans-serif;  font-size:11px;  color:#262626;  font-weight:bold;  margin-top:0px !important; }
+div.ttl.g-std a:link,div.ttl.g-std a:active,div.ttl.g-std a:visited{color:#262626  !important;  text-decoration:none; }
+div.ttl.g-std a:hover{text-decoration:underline; }
+div.msg{color:#5d5d5d !important; }
+/* Can chage to color */
+td#CentralArea table.gallery{ margin:0; padding:0px 4px 0px 4px;  border:0; background: #fff; /*background:url(images/eservices_ebay_gallery_bg.jpg) left top no-repeat;*/  width:266px !important;  height:367px !important;  color:#000; transition:0.8s;}
+td#CentralArea table.gallery:hover {box-shadow:0px 0px 15px #7f7f7f !important;}
+td#CentralArea td.gallery{ margin:0;  padding:0px 0px 0px 0px;  border:0;  width:266px !important;  height:367px !important;  color:#000; }
+td#CentralArea table.gallery td.picture div.image{margin:0 auto;  padding:0px;  border:0;  vertical-align:middle; }
+td#CentralArea .grid td.left{ margin:0;  padding:0;  border:0; }
+td#CentralArea div.rs-pview{ margin:0;  padding:0 0 0 12px;  border:0; }
+td#CentralArea div.dynpg{ margin:0;  padding:0px 0 0 0;  border:0; }
+td#CentralArea div.dynpg table.pgbc{color:#fff;  font-weight:normal;  font-size:11px;  margin:0px;  padding:0;  background-color:#000;}
+td#CentralArea div.dynpg table.pgbc a{ color:#fff; color: #fff; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px; line-height: 14px;}
+td#CentralArea div.dynpg span.pipe{ color:#fff; }
+table.gallery td.camera{ margin:0;  padding:0;  border:0;  vertical-align:middle; }
+table.gallery td.picture{ margin:0;  padding:0;  border:0; }
+table.gallery img{ margin:0;  padding:0;  border:0; vertical-align:middle; }
+td#CentralArea table.gallery td.picture div.image img{ margin:0;  padding:15px 0 0 0;  border:0;  vertical-align:middle; }
+table.gallery .mi{ min-height:10px;  margin-top:25px;  margin-bottom:0px;  padding:0px 15px; border:0;  text-align:left;  height:20px; }
+td#CentralArea .grid{ margin:10px 0 0 0;  padding:0;  border:0; }
+td#CentralArea .time2 { padding: 0; }
+td#CentralArea .time2 span { color: #333; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 300; font-size:14px; padding: 0 0 0 10px;  }
+td#CentralArea .time2 .label{ color: #333; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px; padding: 0;  }
+.dynpg .l{
+	padding-left: 15px;
+}
+.dynpg .r .form label,
+.dynpg span.page{ color: #fff; font-family: 'Open Sans', Arial, sans-serif !important; font-weight: 400; font-size:14px; line-height: 14px; }
+.pager .next>a{ float: none;  }
+.dynpg .r .form input.page{ border:1px solid #aaa; }
 @media screen and (max-width: 1199px) {
 	#nav{ display: none; }
 	.slicknav_menu {
