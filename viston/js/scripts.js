@@ -36,11 +36,11 @@ jQuery(document).ready(function(){
     });
 
     // Masonary
-//    jQuery(window).load(function(){
-//        jQuery('.post-masonary').isotope({
-//          // options
-//          itemSelector: '.lists',
-//          isOriginLeft: true
-//        });
-//    });
+    jQuery(window).load(function(){
+        jQuery('.news .masonry').isotope({
+          // options
+          itemSelector: 'article',
+          isOriginLeft: true
+        });
+    });
 });
