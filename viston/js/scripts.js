@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 
     // Masonary
     jQuery(window).load(function(){
-        jQuery('.news .masonry').isotope({
+        jQuery('.masonry').isotope({
           // options
           itemSelector: 'article',
           isOriginLeft: true
