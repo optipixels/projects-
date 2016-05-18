@@ -195,7 +195,7 @@ h6 {
 .banner {
 	background: #ffcb08;
 	margin: 0 0 30px;
-	background: #ffcb08 url('http://optipixels.com/rfagears/images/banner3.png') no-repeat 100% 0;
+	background: #ffcb08 url('http://optipixels.com/rfagears/images/banner.png') no-repeat 500px 0;
 	/*background-size: cover;*/
 	position: relative;
 	/*margin: 0 -9999px;
@@ -280,6 +280,7 @@ h6 {
 	padding: 20px 0;
 	background:#eee;
 	margin: 0 0 30px;
+	overflow: hidden;
 }
 #main p,
 #main ul{
@@ -344,6 +345,11 @@ transition: all 0.3s ease-out;
 -ms-transition: all 0.3s ease-out;
 -o-transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;
+}
+
+#main .sidebar{
+	margin-bottom:-9999px;
+	padding-bottom: 9999px;
 }
 .widget-cat{
 	margin:0;
