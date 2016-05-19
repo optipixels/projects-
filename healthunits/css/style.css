@@ -3891,6 +3891,12 @@ a img.aligncenter {
 		background-position: 50% 0;
 	}
     .post-listing .listing-holder .post-item{ margin-bottom: 20px; }
+    .sub-header .frame{padding: 22px; }
+    .sub-header h1{ line-height: 40px; }
+    h1{
+        font-size: 36px;
+        line-height: 38px;
+    }
     h2 {
         font-size: 32px;
         line-height: 35px;
