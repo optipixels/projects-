@@ -3731,6 +3731,10 @@ a img.aligncenter {
 	    text-decoration: none;
 	    text-shadow: none;
 	    padding: 10px 10px;
+        float: none;
+        width:38px;
+        height: 32px;
+        margin: 0 auto;
 	}
 	.slicknav_nav .slicknav_arrow{
 		font-size: 18px !important;
@@ -3969,6 +3973,8 @@ a img.aligncenter {
 		text-align: left;
 	}
     .today-sec .pod .text{ position: static; }
+    .header-top .addnav-area,
+    .page-sidebar{ display: none; }
 }
 @media screen and (max-width: 599px) {
 	.slider-post .post-list{ text-align: center; }
