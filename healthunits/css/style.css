@@ -3940,10 +3940,11 @@ a img.aligncenter {
 		padding: 10px 10px 10px 60px;
 		font-size: 16px;
 	}
+    .newsletter-small-sec form button[type="submit"], 
 	.newsletter-small-sec form input[type="submit"]{
 		height: 60px;
 		font-size: 18px;
-		width: 160px;
+		width: 120px;
 	}
 	.newsletter-sec form input[type="submit"]{
 		height: 60px;
@@ -3966,6 +3967,7 @@ a img.aligncenter {
 		line-height: 24px;
 		text-align: left;
 	}
+    .today-sec .pod .text{ position: static; }
 }
 @media screen and (max-width: 599px) {
 	.slider-post .post-list{ text-align: center; }
@@ -4001,5 +4003,14 @@ a img.aligncenter {
 	.comic-gallery .text{
 		position: static;
 	}
+    .newsletter-small-sec form button[type="submit"], 
+    .newsletter-small-sec form input[type="submit"]{
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .header-top .addnav-area{ overflow: visible; }
+    .header-top .addnav-area > li.share:hover .social-area{ width: 220px; }
+    .header-top .addnav-area > li.search:hover .search-box{ width: 75%; }
 
 }
