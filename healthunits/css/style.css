@@ -3886,6 +3886,7 @@ a img.aligncenter {
 		padding: 92px 0 0;
 		background-position: 50% 0;
 	}
+    .post-listing .listing-holder .post-item{ margin-bottom: 20px; }
     h2 {
         font-size: 32px;
         line-height: 35px;
