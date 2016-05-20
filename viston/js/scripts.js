@@ -36,11 +36,40 @@ jQuery(document).ready(function(){
     });
 
     // Masonary
-    jQuery(window).load(function(){
-        jQuery('.masonry').isotope({
-          // options
-          itemSelector: 'article',
-          isOriginLeft: true
+    if(jQuery('.masonry').length != 0){
+        jQuery(window).load(function(){
+            jQuery('.masonry').isotope({
+              // options
+              itemSelector: 'article',
+              isOriginLeft: true
+            });
         });
-    });
+    }
+    
+    if(jQuery('.port-masonry').length != 0){
+        jQuery(window).load(function(){
+            jQuery('.port-masonry').isotope({
+              // options
+              itemSelector: '.jprt-item',
+              isOriginLeft: true
+            });
+        });
+    }
+    
+    // Portfolio
+    if(jQuery('.jprt-container.col4').length != 0){
+        jQuery(function () {
+            jQuery('.jprt-container.col4').jportilio({
+                ratio: 0.65
+            });
+        });
+    }
+    if(jQuery('.jprt-container.col3').length != 0){
+        jQuery(function () {
+            jQuery('.jprt-container.col3').jportilio({
+                ratio: 0.65,
+                ws_lg: 3
+            });
+        });
+    }
 });
