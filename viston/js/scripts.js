@@ -5,7 +5,8 @@ jQuery(document).ready(function(){
         label: '',
         closedSymbol: '<i class="fa fa-angle-right"></i>',
         openedSymbol: '<i class="fa fa-angle-down"></i>',
-        prependTo: '.nav-area'
+        prependTo: '.nav-area',
+        duration: 400
     });
 
     // Navigation Items Sensor
@@ -16,6 +17,17 @@ jQuery(document).ready(function(){
         jQuery('#nav>ul>li:nth-child(' + maxItems + ') ~ li').wrapAll('<li class="more"></li>').wrapAll('<ul class="sub-dropdown"></ul>');
         jQuery('#nav>ul>li:last-child').prepend('<a class="more" href="#"><span></span><span></span><span></span></a>');
     }
+    
+    // fixed nav on scrolling
+    var XposNav = $(".nav-block").offset().top;
+    $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        if(scrollPos >= XposNav){
+            $(".nav-block").addClass('fixed');
+        }else if(scrollPos < XposNav){
+            $(".nav-block").removeClass('fixed');
+        }
+    });
     
     // Slider
     jQuery('.slider').slick({
@@ -29,7 +41,8 @@ jQuery(document).ready(function(){
             {
                 breakpoint: 768,
                 settings: {
-                    dots: false
+                    dots: false,
+                    arrows:false
                 }
             },
         ]
@@ -48,7 +61,8 @@ jQuery(document).ready(function(){
             {
                 breakpoint: 768,
                 settings: {
-                    dots: false
+                    dots: false,
+                    fade:false
                 }
             },
         ]
@@ -107,8 +121,10 @@ jQuery(document).ready(function(){
 	}
     
     // Counter
-    jQuery('.counter-sec .count').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    if( jQuery(".counter-sec").length != '' ){
+        jQuery('.counter-sec .count').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    }
 });
