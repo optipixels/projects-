@@ -34,6 +34,25 @@ jQuery(document).ready(function(){
             },
         ]
     });
+    
+    // Testimonial Slider
+    jQuery('.testi-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows:false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade:true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            },
+        ]
+    });
 
     // Masonary
     if(jQuery('.masonry').length != 0){
@@ -72,4 +91,24 @@ jQuery(document).ready(function(){
             });
         });
     }
+    
+    // Skill-bar
+    if( jQuery(".skillbar").length != '' ){
+        jQuery('.skillbar').each(function() {
+            $(this).waypoint(function(direction) {
+                jQuery(this).find('.skillbar-bar').animate({
+                    width: jQuery(this).attr('data-percent')
+                }, 2000);
+            }, {
+                offset: "100%",
+                triggerOnce: true
+            });
+        });
+	}
+    
+    // Counter
+    jQuery('.counter-sec .count').counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
