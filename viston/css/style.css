@@ -715,6 +715,7 @@ a img.aligncenter {
     color: #000;
 }
 /* Slider */
+#main .slider{ margin: -60px 0 0;}
 .slider .slide{ position: relative; }
 .slider .description{
     position: absolute;
@@ -1754,6 +1755,53 @@ a img.aligncenter {
     color: #fff;
     font-size: 22px;
     line-height: 50px;
+}
+/* Portfolio Details */
+.project-details h3{
+    font-weight: 400;
+    margin: 0 0 40px;
+    text-align: center;
+}
+.project-details{
+    padding: 120px 0;
+}
+.project-details .detail-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.project-details .detail-list li{
+    overflow: hidden;
+    margin: 0 0 20px;
+}
+.project-details .detail-list .title{
+    float: left;
+    min-width: 100px;
+}
+.project-details .detail-list .value{
+    overflow: hidden;
+    padding: 0 0 0 50px;
+    color: #8c8c8c;
+    font-weight: 300;
+}
+.project-details .detail-list .icon{
+    float: left;
+    color: #17212c;
+    font-family: "icon-worksregular";
+    font-size:20px;
+    width:20px;
+    text-align: center;
+}
+.project-details .detail-list .text{
+    overflow: hidden;
+    padding: 0 0 0 16px;
+    font-weight: 300;
+    color: #17212c;
+}
+.project-details p{
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: justify;
 }
 /* Filter */
 .filter:after{
