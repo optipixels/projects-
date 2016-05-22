@@ -687,7 +687,11 @@ a img.aligncenter {
     border: none;
 }
 /* Sub Header */
-.sub-header img{margin: -65px 0;}
+.sub-header img{
+    margin: -65px 0;
+    width: 100%;
+    height: auto;
+}
 .sub-header{
     padding: 65px 0;
     background-color: #f0f0f0; 
@@ -1831,7 +1835,7 @@ a img.aligncenter {
 }
 /* News Details */
 .blog-details{ 
-    padding: 50px 0;
+    padding: 50px 15px;
     max-width: 970px;
     margin: 0 auto;
 }
@@ -1910,7 +1914,7 @@ a img.aligncenter {
     border-top:1px solid #f0f0f0;
 }
 .comments-area .holder{
-    padding: 50px 0;
+    padding: 50px 15px;
     max-width: 970px;
     margin: 0 auto;
 }
@@ -1936,7 +1940,7 @@ a img.aligncenter {
     height: auto;
     display: block;
 }
-.comments li:last-child .text-area{ border:none; }
+.comments>li:last-child .text-area{ border:none; }
 .comments .text-area{
     overflow: hidden;
     padding: 0 0 40px;
@@ -1981,7 +1985,7 @@ a img.aligncenter {
     list-style: none;
 }
 .comment-form{
-    padding: 50px 0;
+    padding: 50px 15px;
     max-width: 970px;
     margin: 0 auto 80px;
 }
@@ -2638,9 +2642,6 @@ a img.aligncenter {
     font-weight: 300;
     display: block;
 }
-@media screen and (max-width: 1199px) {
-    
-}
 @media screen and (max-width: 992px){
     h1{
         font-size: 36px;
@@ -2721,7 +2722,6 @@ a img.aligncenter {
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
     }
-
 }
 @media screen and (max-width: 767px){
     #header .header-top{ text-align: center; }
@@ -2762,6 +2762,32 @@ a img.aligncenter {
         vertical-align: middle;
         text-align: left;
     }
+    .blog-details,
+    .comment-form,
+    .comments-area .holder{ padding: 20px 15px; }
+    .comments-area{ padding: 40px 0 0;}
+    .blog-details .post-options{ margin: 30px 0; }
+    .blog-details .post-options img,
+    .blog-details .post-options ul{
+        vertical-align: top;
+    }
+    .blog-details .post-options ul li:first-child,
+    .blog-details .post-options ul li{
+        float: none;
+        margin: 0 0 20px;
+    }
+    .comments figure{
+        float: none;
+        display: block;
+        margin: 0 0 20px;
+    }
+    .comments .post-info li:first-child,
+    .comments .post-info li{
+        margin: 0 20px 10px 0;
+    }
+    .comments .children{
+        padding: 0 0 0 50px;
+    }
     #footer .contact-sec .icon{
         float: none;
         display: inline-block;
@@ -2793,4 +2819,5 @@ a img.aligncenter {
     }
     .newsletter form input[type="submit"]{ width: 100px;}
     .post-pager span{ display: none; }
+    
 }
