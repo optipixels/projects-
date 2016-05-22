@@ -17,6 +17,7 @@
 <body>
     <div id="wrapper">
         <header id="header">
+            <!-- Header Top -->
             <div class="header-top">
                 <div class="container">
                     <ul class="contact-info">
@@ -40,44 +41,71 @@
                     </ul>
                 </div>
             </div>
+            <!-- Navigation Area -->
             <div class="nav-block">
                 <div class="container">
-                    <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                    <!-- Main Nav -->
                     <div class="nav-area">                      
                         <nav id="nav">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li class="has-dropdown"><a href="#">Pages</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li class="has-dropdown">
                                     <a href="#">Portfolio</a>
                                     <ul class="sub-dropdown">
+                                        <li><a href="portfolio-3col.html">3 Columns</a></li>
+                                        <li><a href="portfolio-4col.html">4 Columns</a></li>
                                         <li class="has-dropdown">
-                                            <a href="#">Boxed</a>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="#">Wide</a>
+                                            <a href="#">Masonry</a>
                                             <ul class="sub-dropdown">
-                                                <li class="has-dropdown"><a href="#">Boxed</a></li>
-                                                <li class="has-dropdown"><a href="#">Wide</a></li>
-                                                <li class="has-dropdown"><a href="#">Masonry</a></li>
-                                                <li class="has-dropdown"><a href="#">Single</a></li>
+                                                <li><a href="portfolio-masonry-4col.html">4 Columns</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-dropdown"><a href="#">Masonry</a></li>
-                                        <li class="has-dropdown"><a href="#">Single</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Single</a>
+                                            <ul class="sub-dropdown">
+                                                <li><a href="portfolio-single1.html">Single1</a></li>
+                                                <li><a href="portfolio-single2.html">Single2</a></li>
+                                                <li><a href="portfolio-single3.html">Single3</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="has-dropdown"><a href="#">Blog</a></li>
-                                <li class="has-dropdown"><a href="#">Shop</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Blog</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="news-2col.html">2 Columns</a></li>
+                                        <li><a href="news-3col.html">3 Columns</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Masonry</a>
+                                            <ul class="sub-dropdown">
+                                                <li><a href="news-masonry-2col.html">2 Columns</a></li>
+                                                <li><a href="news-masonry-3col.html">3 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="news-single.html">Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="shop-4col.html">4 Columns</a></li>
+                                        <li><a href="shop-3col.html">3 Columns</a></li>
+                                        <li><a href="shop-2col.html">2 Columns</a></li>
+                                        <li><a href="shop-single.html">Single</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
+                        <!-- Additional Nav -->
                         <ul class="add-nav">
                             <li class="search">
                                 <a href="#">
                                     <span class="icon"><i class="fa fa-search"></i></span>
                                     <span class="text">Search</span>
                                 </a>
-                                <form class="search-form" action="">
+                                <form class="search-form" action="#">
                                     <fieldset>
                                         <input type="search" placeholder="Search...">
                                         <div class="submit"><input type="submit" value="search"></div>
@@ -109,105 +137,107 @@
         <div id="main">
             <div class="container">
                 <div class="row">
-                    <section class="content col-md-9">
-                        <section class="news masonry 2col">
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry1.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry2.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry3.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry4.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry5.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry6.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry7.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                            <article class="col-md-6">
-                                <figure><a href="#"><img src="images/news-masonry8.jpg" alt="#"></a></figure>
-                                <div class="text">
-                                    <h3><a href="#">The Future Is In Your Hands</a></h3>
-                                    <ul class="info">
-                                        <li>Oscar Jefferson</li>
-                                        <li>25 March 2016</li>
-                                    </ul>
-                                    <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
-                                    <a href="#" class="more">Read more</a>
-                                </div>
-                            </article>
-                        </section>
+                    <div class="content col-md-9 col-sm-8 col-xs-12">
+                        <div class="row">
+                            <section class="news masonry 2col">
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry1.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry2.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry3.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry4.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry5.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry6.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry7.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6 col-sm-6 col-xs-12">
+                                    <figure><a href="#"><img src="images/news-masonry8.jpg" alt="#"></a></figure>
+                                    <div class="text">
+                                        <h3><a href="#">The Future Is In Your Hands</a></h3>
+                                        <ul class="info">
+                                            <li>Oscar Jefferson</li>
+                                            <li>25 March 2016</li>
+                                        </ul>
+                                        <p>Vestibulum id aliquam urna. Sed odio tortor, molestie sit amet lacinia egestas, tempor at sapien. Donec tempor, amet varius mollis lectus bibendum.</p>
+                                        <a href="#" class="more">Read more</a>
+                                    </div>
+                                </article>
+                            </section>
+                        </div>
                         <div class="pager">
                             <div class="container">
                                 <ul>
@@ -219,8 +249,8 @@
                                 </ul>  
                             </div>
                         </div>
-                    </section>
-                    <aside class="sidebar col-md-3">
+                    </div>
+                    <aside class="sidebar col-md-3 col-sm-4 col-xs-12">
                         <div class="widgets">
                             <div class="widget widget-search">
                                 <form action="">

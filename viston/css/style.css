@@ -332,7 +332,7 @@ a img.aligncenter {
     -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
     position: relative;
-    z-index: 999;
+    z-index: 99999;
 }
 #header .header-top {
     overflow: hidden;
@@ -1624,7 +1624,7 @@ a img.aligncenter {
 }
 .pager ul li{
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 15px 15px 0;
 }
 .pager ul a{
     color: #17212c;
@@ -2131,7 +2131,7 @@ a img.aligncenter {
     margin-left: 70px;
 }
 .filter .sort-list select{
-    padding-right: 25px;
+    padding-right: 10px;
     width: 198px;
     height: 34px;
     font-size:14px;
@@ -2505,7 +2505,7 @@ a img.aligncenter {
 .widgets .widget-cart .buttons{ overflow: hidden; }
 .widgets .widget-cart .buttons a{
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 15px 10px 0;
     background-color: #e6e6e6;
     border-radius: 2px;
     line-height: 36px;
@@ -2647,6 +2647,13 @@ a img.aligncenter {
         font-size: 36px;
         line-height: 38px;
     }
+    .filter .filter-area,
+    .filter .info{
+        float: none;
+        overflow: hidden;
+        margin: 0 0 5px;
+        display: block;
+    }
     .header-top .contact-info li{ padding: 0 20px 0 0; }
     .slider .description h1{
         margin: 0 0 12px;
@@ -2677,7 +2684,7 @@ a img.aligncenter {
         right: 0;
         width: 290px;
         padding: 15px;
-        max-height: 380px;
+        max-height: 250px;
         overflow: auto;
         -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
@@ -2788,6 +2795,7 @@ a img.aligncenter {
     .comments .children{
         padding: 0 0 0 50px;
     }
+    .filter .search-bar{ width: 140px; }
     #footer .contact-sec .icon{
         float: none;
         display: inline-block;
@@ -2819,5 +2827,7 @@ a img.aligncenter {
     }
     .newsletter form input[type="submit"]{ width: 100px;}
     .post-pager span{ display: none; }
+    .filter .sort-list{ margin: 0; }
+    .filter .sort-list select{ width: 140px; }
     
 }

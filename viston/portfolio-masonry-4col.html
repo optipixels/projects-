@@ -18,6 +18,7 @@
 <body>
     <div id="wrapper">
         <header id="header">
+            <!-- Header Top -->
             <div class="header-top">
                 <div class="container">
                     <ul class="contact-info">
@@ -41,51 +42,74 @@
                     </ul>
                 </div>
             </div>
+            <!-- Navigation Area -->
             <div class="nav-block">
                 <div class="container">
-                    <div class="logo">
-                        <a href="#"><img src="images/logo.png" alt=""></a>
-                    </div>
-                    <div class="nav-area">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                    <!-- Main Nav -->
+                    <div class="nav-area">                      
                         <nav id="nav">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li class="has-dropdown"><a href="#">Pages</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li class="has-dropdown">
                                     <a href="#">Portfolio</a>
                                     <ul class="sub-dropdown">
+                                        <li><a href="portfolio-3col.html">3 Columns</a></li>
+                                        <li><a href="portfolio-4col.html">4 Columns</a></li>
                                         <li class="has-dropdown">
-                                            <a href="#">Boxed</a>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="#">Wide</a>
+                                            <a href="#">Masonry</a>
                                             <ul class="sub-dropdown">
-                                                <li class="has-dropdown"><a href="#">Boxed</a></li>
-                                                <li class="has-dropdown"><a href="#">Wide</a></li>
-                                                <li class="has-dropdown"><a href="#">Masonry</a></li>
-                                                <li class="has-dropdown"><a href="#">Single</a></li>
+                                                <li><a href="portfolio-masonry-4col.html">4 Columns</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-dropdown"><a href="#">Masonry</a></li>
-                                        <li class="has-dropdown"><a href="#">Single</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Single</a>
+                                            <ul class="sub-dropdown">
+                                                <li><a href="portfolio-single1.html">Single1</a></li>
+                                                <li><a href="portfolio-single2.html">Single2</a></li>
+                                                <li><a href="portfolio-single3.html">Single3</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="has-dropdown"><a href="#">Blog</a></li>
-                                <li class="has-dropdown"><a href="#">Shop</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Blog</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="news-2col.html">2 Columns</a></li>
+                                        <li><a href="news-3col.html">3 Columns</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Masonry</a>
+                                            <ul class="sub-dropdown">
+                                                <li><a href="news-masonry-2col.html">2 Columns</a></li>
+                                                <li><a href="news-masonry-3col.html">3 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="news-single.html">Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-dropdown">
+                                        <li><a href="shop-4col.html">4 Columns</a></li>
+                                        <li><a href="shop-3col.html">3 Columns</a></li>
+                                        <li><a href="shop-2col.html">2 Columns</a></li>
+                                        <li><a href="shop-single.html">Single</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
+                        <!-- Additional Nav -->
                         <ul class="add-nav">
                             <li class="search">
                                 <a href="#">
                                     <span class="icon"><i class="fa fa-search"></i></span>
                                     <span class="text">Search</span>
                                 </a>
-                                <form class="search-form" action="">
+                                <form class="search-form" action="#">
                                     <fieldset>
                                         <input type="search" placeholder="Search...">
-                                        <div class="submit">
-                                            <input type="submit" value="search">
-                                        </div>
+                                        <div class="submit"><input type="submit" value="search"></div>
                                     </fieldset>
                                 </form>
                             </li>
@@ -115,7 +139,7 @@
             <section class="portfolio">
                 <!-- grid of items: -->
                 <div class="port-masonry">
-                    <div class='jprt-item col-md-3'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12'>
                         <figure><a href="#"><img src="images/portfolio-masonry1.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -128,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,design'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,design'>
                         <figure><a href="#"><img src="images/portfolio-masonry2.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -141,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,photography'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,photography'>
                         <figure><a href="#"><img src="images/portfolio3.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -154,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,branding'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,branding'>
                         <figure><a href="#"><img src="images/portfolio4.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -167,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,design'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,design'>
                         <figure><a href="#"><img src="images/portfolio5.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -180,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,photography'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,photography'>
                         <figure><a href="#"><img src="images/portfolio-masonry3.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -193,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,branding'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,branding'>
                         <figure><a href="#"><img src="images/portfolio7.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -206,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,design'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,design'>
                         <figure><a href="#"><img src="images/portfolio8.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
@@ -219,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='jprt-item col-md-3' data-tags='all,design'>
+                    <div class='jprt-item col-md-3 col-sm-4 col-xs-12' data-tags='all,design'>
                         <figure><a href="#"><img src="images/portfolio8.jpg" alt=""></a></figure>
                         <div class="item-hover">
                             <ul class="links">
