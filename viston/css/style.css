@@ -1829,6 +1829,198 @@ a img.aligncenter {
     width: 100%;
     height: auto;
 }
+/* News Details */
+.blog-details{ 
+    padding: 50px 0;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.blog-details p{
+    color: #17212c;
+    margin:0 0 40px;
+    font-weight: 300;
+    text-align: justify;
+}
+.blog-details p strong{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.blog-details ul{
+    color: #17212c;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.blog-details blockquote{
+    margin: 0 0 40px;
+    border: none;
+    padding: 0;
+}
+.blog-details blockquote q{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #17212c;
+    font-style: italic;
+    margin: 0 0 16px;
+    display: block;
+}
+.blog-details blockquote cite{
+    display: block;
+    font-size: 13px;
+    color: #17212c;
+    font-style: normal;
+}
+.blog-details .post-options{
+    padding: 20px 0 0 ;
+    border-top:1px solid #f0f0f0;
+    margin: 100px 0;
+}
+.blog-details .post-options img{
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 30px 0 0;
+}
+.blog-details .post-options ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.blog-details .post-options ul li:first-child{ margin: 0; }
+.blog-details .post-options ul li{
+    float: left;
+    width: 120px;
+    margin: 0 0 0 80px;
+}
+.blog-details .post-options ul .title{
+    display: block;
+    font-weight: 300;
+    color: #17212c;
+}
+.blog-details .post-options ul .value{
+    display: block;
+    color: #8c8c8c;
+    font-weight: 300;
+}
+.comments-area{
+    padding: 80px 0 0;
+    border-top:1px solid #f0f0f0;
+}
+.comments-area .holder{
+    padding: 50px 0;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.comments-area h2{
+    font-size: 29px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 80px;
+}
+.comments{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.comments .thumblist{ margin: 0 0 40px; }
+.comments figure{
+    width: 75px;
+    float: left;
+    margin: 0 30px 0 0;
+}
+.comments figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.comments li:last-child .text-area{ border:none; }
+.comments .text-area{
+    overflow: hidden;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.comments .post-info{
+    margin: 0 0 8px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.comments .post-info li:first-child{ margin: 0; }
+.comments .post-info li{
+    float: left;
+    margin: 0 0 0 70px;
+}
+.comments .post-info i{
+    color: #8c8c8c;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 14px;
+    margin: 0 12px 0 0;
+}
+.comments .post-info a,
+.comments .post-info span{
+    font-size: 13px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+.comments p{
+    color: #17212c;
+    font-weight: 300;
+    margin: 0;
+}
+.comments .children{
+    margin: 0;
+    padding: 0 0 0 105px;
+    list-style: none;
+}
+.comment-form{
+    padding: 50px 0;
+    max-width: 970px;
+    margin: 0 auto 80px;
+}
+.comment-form h2{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    margin: 0 0 70px;
+}
+.comment-form .field{
+    margin-bottom: 30px;
+}
+.comment-form textarea,
+.comment-form input[type="email"],
+.comment-form input[type="text"]{
+    width: 100%;
+    height: 37px;
+    border:1px solid #e6e6e6;
+    color: #17212c;
+    font-weight: 300;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 6px 16px;
+}
+.comment-form textarea{
+    width: 100% !important;
+    height: 113px !important;
+    padding: 12px 16px;
+}
+.comment-form input[type="submit"]{
+    background-color: #e6e6e6;
+    border:none;
+    width: 200px;
+    height: 37px;
+    font-weight: 300;
+    color: #17212c;
+    border-radius: 2px;
+}
 /* Post Pager */
 #main .post-pager{
     border-top:1px solid #f0f0f0;
