@@ -1,13 +1,42 @@
 jQuery(document).ready(function(){
     new WOW().init();
     // Responsive Navigation
-    jQuery('#nav>ul').slicknav({
-        label: '',
-        closedSymbol: '<i class="fa fa-angle-right"></i>',
-        openedSymbol: '<i class="fa fa-angle-down"></i>',
-        prependTo: '.nav-area',
-        duration: 400
-    });
+    mobileNav('#nav>ul', '.nav-area');
+    
+    function mobileNav(navTag, menuBtnPrependTo){
+        jQuery(menuBtnPrependTo).prepend('<a class="menu-btn" href="#"><span></span><span></span><span></span></a>');
+        jQuery('body').prepend('<div class="mobile-nav"></div>');
+        jQuery('.mobile-nav ~ *').wrapAll('<div class="mobile-nav-wrap"></div>')
+        jQuery(navTag).clone().prependTo('.mobile-nav');
+        jQuery('.mobile-nav').prepend('<a class="menu-close" href="#">x</a>')
+        jQuery('.mobile-nav>ul li').each(function(){
+            var subdrop = jQuery(this).find('ul').length;
+            if(subdrop != '0'){
+                jQuery(this).addClass('has-dropdown');
+            }
+        });
+        jQuery('.mobile-nav .has-dropdown').find('>ul').hide();
+        jQuery('.mobile-nav .has-dropdown').on('click', '>a', function(e){
+            e.preventDefault();
+            var open = jQuery(this).parent('li').hasClass('open');
+            if(!open){
+                jQuery(this).parent('li').addClass('open');
+                jQuery(this).siblings('ul').slideDown();
+            }else{
+                jQuery(this).parent('li').removeClass('open');
+                jQuery(this).siblings('ul').slideUp();
+            }
+        });
+        jQuery('.menu-btn, .menu-close').on('click', function(e){
+            e.preventDefault();
+            var menuActive = jQuery(this).parents('body').hasClass('menu-active');
+            if(!menuActive){
+                jQuery(this).parents('body').addClass('menu-active');
+            }else{
+                jQuery(this).parents('body').removeClass('menu-active');
+            }
+        });
+    }
 
     // Navigation Items Sensor
     var maxItems = 8; // Change Number of Items here
