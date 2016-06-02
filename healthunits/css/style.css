@@ -954,6 +954,10 @@ a img.aligncenter {
 	position: relative;
 	margin: 0 0 20px;
 }
+.video-posts .post-items figure iframe{
+	width: 100% !important;
+	height: 300 !important;
+}
 .video-posts .post-items figure img{
 	width: 100%;
 	height: auto;
@@ -3926,7 +3930,21 @@ a img.aligncenter {
 		display: inline-block;
 		vertical-align: middle;
 	}
-	.quotes-sec .title-area{ display: none; }
+	.quotes-sec blockquote{padding: 150px 15px 100px;}
+	.quotes-sec{ position: relative; }
+	.quotes-sec .title-area{
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		top:0;
+		padding: 15px;
+	}
+	.quotes-sec blockquote q{
+		font-size: 24px;
+		line-height: 34px;
+		background-position: 0 0;
+	}
 	.tip-sec .title-area{ margin: 0 0 20px; }
 	.newsletter-sec .newsletter-holder{
 		max-width: 280px;
@@ -3981,6 +3999,53 @@ a img.aligncenter {
     .today-sec .pod .text{ position: static; }
     .header-top .addnav-area,
     .page-sidebar{ display: none; }
+    .main-post-block .post-box .post-info{
+    	float: none;
+    	padding: 0;
+    	border:none;
+    	margin: 0 0 20px;
+    }
+    .main-post-block .post-box figure{ margin: 0 auto 10px; }
+    .post-listing .post-list, 
+    .main-post-block .post-box .post-list{
+    	text-align: center;
+    }
+    .post-listing .post-list li:first-child, 
+    .main-post-block .post-box .post-list li:first-child
+    .post-listing .post-list li, 
+    .main-post-block .post-box .post-list li{
+    	float: none;
+    	display: inline-block;
+    	vertical-align: middle;
+    	padding: 0 10px;
+    }
+    .main-post-block .post-box .text-area{ padding: 0; }
+    .post-listing .listing-holder{ padding: 30px 0; }
+    h1{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .nav-area{
+    	float:right;
+    	padding: 30px 0;
+    }
+    .slicknav_menu{ padding: 0 0 10px !important; }
+    .slicknav_menu .slicknav_btn{ float: right; }
+    .slicknav_menu .slicknav_nav{
+    	position: absolute;
+    	top:100%;
+    	width: 290px;
+    	right: 0;
+    	z-index: 9999;
+    	padding: 20px;
+    }
+    .header-top{
+    	float: left;
+    }
 }
 @media screen and (max-width: 599px) {
 	.slider-post .post-list{ text-align: center; }
