@@ -3740,6 +3740,7 @@ a img.aligncenter {
 	position: relative;
 	overflow: hidden;
 }
+.post-masonary .container{ position: relative;}
 .post-masonary .items-holder{
 	margin: 0;
 	padding: 0;
@@ -3787,6 +3788,88 @@ a img.aligncenter {
 	line-height: 16px;
 	padding: 0 10px;
 	border-left: 1px solid #cdd8df;
+}
+/* Author Section */
+.author-sec{
+    background: #4a4a4a;
+    padding: 50px 0 0;
+}
+.author-sec .image-area{ 
+    background: #fff;
+    padding: 20px;
+    margin: 0 -4px -40px 0;
+}
+.author-sec .image-area img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.author-sec .text-area{
+    padding: 20px 40px;
+    font-size: 18px;
+    color: #ccc;
+    line-height: 26px;
+}
+.author-sec .text-area .top{
+    display: block;
+    font-size: 18px;
+    color: #ff9000;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.author-sec .text-area h2{
+    font-size: 50px;
+    line-height: 52px;
+    margin: 0 0 10px;
+    color: #fff;
+}
+.author-sec .text-area .title{
+    font-size: 18px;
+    color: #999;
+    display: block;
+    margin: 0 0 22px;
+}
+.author-sec .text-area p{ margin: 0 0 26px;}
+.author-sec .text-area a{
+    font-size: 18px;
+    color: #999;
+}
+.author-sec .social-icons{
+	float: left;
+	margin: 0;
+	padding: 14px 0 0;
+	list-style: none;
+	line-height: 32px;
+}
+.author-sec .social-icons li{
+	display: inline-block;
+    vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	border-radius: 28px;
+	overflow: hidden;
+	margin: 0 14px 0 0;
+}
+.author-sec .social-icons a{
+	display: block;
+}
+.author-sec .social-icons a:hover{ color: #ff9000; }
+.author-sec .social-icons i{
+	font-size: 33px;
+	line-height: 33px;
+	margin: -2px 0 0;
+}
+.author-sec .btn-email{
+	float: right;
+	color: #fff !important;
+    background: #ff9000;
+	font-size: 18px;
+    font-weight: 700;
+    line-height: 55px;
+    border-radius: 2px;
+    min-width: 190px;
+    text-align: center;
+    
 }
 @media screen and (max-width: 1199px) {
 	#nav{ display: none; }
@@ -4018,6 +4101,10 @@ a img.aligncenter {
         font-size: 14px;
         line-height: 17px;
     }
+    .author-sec .image-area{
+        padding: 10px;
+        margin: 0 -4px 0 0;
+    }
 }
 @media screen and (max-width: 767px) {
 	.header-top .addnav-area > li:first-child{ display: block; }
@@ -4187,5 +4274,16 @@ a img.aligncenter {
     .header-top .addnav-area{ overflow: visible; }
     .header-top .addnav-area > li.share:hover .social-area{ width: 220px; }
     .header-top .addnav-area > li.search:hover .search-box{ width: 75%; }
+    .author-sec .text-area{ padding: 20px; }
+    .author-sec .social-area{ text-align: center; }
+    .author-sec .btn-email,
+    .author-sec .social-icons{
+        float:none;
+        margin: 0 0 20px;
+    }
+    .author-sec .btn-email{ 
+        display: inline-block;
+        vertical-align: middle
+    }
 
 }
