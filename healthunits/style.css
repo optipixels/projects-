@@ -1,0 +1,111 @@
+/*
+Theme Name: nb_health
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nb_health
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+nb_health is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+ 
+.text-block .post-info .avatar-50{
+  width:68px;
+height:64px;
+}
+.blog-details blockquote:after {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    content: '“' !important;
+    font-family: Georgia, serif;
+    font-size: 100px;
+    line-height: 100px;
+    font-style: italic;
+    color: #efa728;
+}
+.search-submit{
+display:none;
+}
+.news-sec .news-list figure img{
+    display: block;
+    width: 100%;
+    height: 100% !important;
+}
+.video-posts .post-items figure:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: none !important;
+    content: '';
+}
+.fw-main-row {
+margin-top:20px !important;
+
+}
+.thumbnail-slider-next{
+top:382px !important;
+}
+.profile-area .avatar-50{
+width: 67px;
+    height: 68px;
+}
+.fw-main-row, .fw-col-xs-12{
+
+padding:0px !important;
+margin:0px !important;
+}
+.social-icons, .comment-subscription-form
+{
+	  
+	  
+	 display:none !important; 
+	}
+ 
+.items-holder .sd-sharing-enabled{
+	
+	display:none !important;
+}
+.entry-title{
+	display:none !important;
+}
+.tab-posts {
+	padding-top:10px;
+}
+
+.sd-content ul li a.sd-button:before{
+	
+	    font: 400 26px/1 Genericons !important;
+}
+
+.sd-social-icon .sd-content ul li[class*=share-] a, .sd-social-icon .sd-content ul li[class*=share-] a:hover, .sd-social-icon .sd-content ul li[class*=share-] div.option a{
+	padding:14px;
+}
+.sub-header .frame{
+	border:none !important;
+}
+.blog-details p{
+	    margin-right: 20px;
+}
+.alm-listing li img{
+    position: relative !important;
+}
+.alm-listing li{
+	padding:0 15px !important;
+}
+.alm-listing li{
+	margin:0 -4px 10px 0 !important;
+}
