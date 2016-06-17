@@ -90,6 +90,43 @@ jQuery(document).ready(function(){
             }
         ]
     });
+    
+    // Comic Slider
+    $('.comic-gallery .gallery-slider ul').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.comic-gallery .gallery-thumbs ul'
+    });
+    $('.comic-gallery .gallery-thumbs ul').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.comic-gallery .gallery-slider ul',
+        dots: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                arrows: false
+              }
+            },
+            {
+              breakpoint: 599,
+              settings: {
+                slidesToShow: 2,
+                arrows: false
+              }
+            }
+        ]
+    });
 
     // Post Tabs
     var parentElem2 = '.tab-posts .post-tabs';
