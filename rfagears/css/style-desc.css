@@ -18,7 +18,8 @@ hgroup,
 menu,
 nav,
 section { display: block; }
-body {
+body,
+body .desc-bg {
 	margin: 0;
 	min-width: 320px;
 	color: #555;
@@ -28,6 +29,7 @@ body {
 	background: #eee url('http://optipixels.com/rfagears/images/bg.jpg') no-repeat 50% 0;
 	background-size: cover;
 	background-attachment: fixed;
+	padding: 20px 0;
 }
 img {
 	border-style: none;
@@ -411,14 +413,6 @@ transition: all 0.3s ease-out;
 	content: '';
 	background: url('http://optipixels.com/rfagears/images/ico-arrow.png') no-repeat;
 }
-.widget-cat ul{
-	list-style: none;
-	padding: 0;
-}
-.widget-cat ul li a{
-	font-size: 13px !important;
-    padding-left: 40px;
-}
 #main .text-block{
 	background:#fff;
 	padding: 30px;
@@ -463,6 +457,20 @@ transition: all 0.3s ease-out;
 	font-weight: normal;
 	margin: 0 0 30px;
 }
+.prod-slider{position: relative;}
+.prod-slider .btn{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 34px;
+	height: 34px;
+	background: #ffcb08;
+	margin: -17px 0 0;
+}
+.prod-slider .btn.next{
+	left: auto;
+	right: 0;
+}
 .prod-slider ul{
 	margin: 0 0 10px;
 	padding: 0;
@@ -495,18 +503,21 @@ transition: all 0.3s ease-out;
 	list-style: none;
 	float: left;
 	width: 220px;
+	font-family: 'Fjalla One', Arial, sans-serif !important;
 }
 .tab-list li a{
 	display: block;
 	padding: 10px;
 	background: #ffcb08;
-	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-ms-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
+	font-family: 'Fjalla One', Arial, sans-serif !important;
 }
+.tab-list li a.selected,
 .tab-list li a:hover{
 	background: #fff;
 }
@@ -514,9 +525,12 @@ transition: all 0.3s ease-out;
 	overflow: hidden;
 	/*border: 1px solid #ccc;
 	border-left: none;*/
-	padding: 10px;
+	padding: 20px;
 	background: #fff;
+	font-family: 'Fjalla One', Arial, sans-serif !important;
 }
+.tab-content h4{ color:#000; font-weight: normal; }
+.tab-content p{ margin: 0 0 40px; } 
 #footer {
 	background: #000;
 	color: #fff;
@@ -730,19 +744,6 @@ table.v4acpcont{ width: 250px !important; }
     right: 20px;
     top: 50%;
     width: 8px;
-}
-.lcat .link br{ display: none; }
-.lcat .link a,
-.lcat a.all_cats {
-    display: block;
-    font-style: normal;
-    margin-bottom: 5px;
-    color: #fff;
-    line-height: 38px;
-    background: #ffcb08;
-    text-align: center;
-    font-family: 'Fjalla One', Arial, sans-serif !important;
-    margin:10px 0;
 }
 /*@media screen and (max-width: 1199px) {
 	#nav{ display: none; }

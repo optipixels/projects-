@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>RFA Gears</title>
+		<link href="http://www.rfagears.us/ebay/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="http://www.rfagears.us/ebay/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+		<link href="http://www.rfagears.us/ebay/css/style-desc.css" rel="stylesheet" type="text/css" media="all">
+		<link href="http://www.rfagears.us/ebay/css/slickslider.css" rel="stylesheet" type="text/css" media="all">
+		<script>
+			//<![CDATA[
+
+		    var tabLinks = new Array();
+		    var contentDivs = new Array();
+
+		    function init() {
+
+		      // Grab the tab links and content divs from the page
+		      var tabListItems = document.getElementById('tabs').childNodes;
+		      for ( var i = 0; i < tabListItems.length; i++ ) {
+		        if ( tabListItems[i].nodeName == "LI" ) {
+		          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+		          var id = getHash( tabLink.getAttribute('href') );
+		          tabLinks[id] = tabLink;
+		          contentDivs[id] = document.getElementById( id );
+		        }
+		      }
+
+		      // Assign onclick events to the tab links, and
+		      // highlight the first tab
+		      var i = 0;
+
+		      for ( var id in tabLinks ) {
+		        tabLinks[id].onclick = showTab;
+		        tabLinks[id].onfocus = function() { this.blur() };
+		        if ( i == 0 ) tabLinks[id].className = 'selected';
+		        i++;
+		      }
+
+		      // Hide all content divs except the first
+		      var i = 0;
+
+		      for ( var id in contentDivs ) {
+		        if ( i != 0 ) contentDivs[id].className = 'tabs hide';
+		        i++;
+		      }
+		    }
+
+		    function showTab() {
+		      var selectedId = getHash( this.getAttribute('href') );
+
+		      // Highlight the selected tab, and dim all others.
+		      // Also show the selected content div, and hide all others.
+		      for ( var id in contentDivs ) {
+		        if ( id == selectedId ) {
+		          tabLinks[id].className = 'selected';
+		          contentDivs[id].className = 'tabs';
+		        } else {
+		          tabLinks[id].className = '';
+		          contentDivs[id].className = 'tabs hide';
+		        }
+		      }
+
+		      // Stop the browser following the link
+		      return false;
+		    }
+
+		    function getFirstChildWithTagName( element, tagName ) {
+		      for ( var i = 0; i < element.childNodes.length; i++ ) {
+		        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		      }
+		    }
+
+		    function getHash( url ) {
+		      var hashPos = url.lastIndexOf ( '#' );
+		      return url.substring( hashPos + 1 );
+		    }
+		    window.onload = init;
+		    //]]>
+		</script>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			    showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			    var i;
+			    var x = document.getElementsByClassName("slides");
+			    if (n > x.length) {slideIndex = 1}
+			    if (n < 1) {slideIndex = x.length} ;
+			    for (i = 0; i < x.length; i++) {
+			        x[i].style.display = "none";
+			    }
+			    x[slideIndex-1].style.display = "block";
+			}
+		</script>
+	</head>
+	<body class="desc">
+		<div class="desc-bg">
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<div class="container">
+					<div class="logo"> <a href="http://stores.ebay.com/rfagears/"> <img src="http://www.rfagears.us/ebay/images/logo.png" alt=""> </a> </div>
+					<div class="nav-area">
+						<nav id="nav">
+							<ul>
+								<li class="active"><a href="http://stores.ebay.com/rfagears/">Home</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/about-us">About</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/listings/">Products</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/shipping">Shipping &amp; Returns</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/terms">Terms &amp; Conditions</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/contact">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<div class="banner">
+				<div class="container">
+					<div class="row">
+						<div class="desc col-md-6">
+							<h2><strong>RFA GEARS</strong> OFFERS BEST &amp; QUALIFIED PRODUCTS</h2>
+					        <p>we are strongly sure that term “fashion” can be applied to the gym, sports &amp; tactical accessories that our company offers. protection, quality, comfort and good look are four concepts that we stick to when creating our fitness accessories.</p>
+						</div>
+					</div>-
+				</div>
+			</div>
+			<!-- Main -->
+			<div id="main">
+				<div class="container">
+					<h2 class="prod-title">Weight Lifting Ankle D-Ring Strap Gym Weight Lifting Thigh Pulley Strap RFA</h2>
+					<div class="row">
+						<div class="left-area col-md-4">
+							<div class="prod-slider">
+								<ul class="slider">
+
+									<li class="slides"><img src="http://www.rfagears.us/ebay/descriptions/images/img1/1.png" alt=""></li>
+
+									<li class="slides" style="display:none;"><img src="http://www.rfagears.us/ebay/descriptions/images/img1/2.png" alt=""></li>
+
+			                        <li class="slides" style="display:none;"><img src="http://www.rfagears.us/ebay/descriptions/images/img1/5.png" alt=""></li>
+			                        <li class="slides" style="display:none;"><img src="http://www.rfagears.us/ebay/descriptions/images/img1/4.png" alt=""></li>
+			 
+			       				</ul>
+								<a class="btn" onclick="plusDivs(-1)">&#10094;</a>
+								<a class="btn next" onclick="plusDivs(+1)">&#10095;</a>
+							</div>
+						</div>
+						<div class="right-area col-md-8">
+							<ul class="tab-list" id="tabs">
+								<li><a href="#tab1">Description</a></li>
+								<li><a href="#tab2">Features</a></li>
+								<li><a href="#tab3">Specifications</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tabs" id="tab1">
+									<!-- Description -->
+									<p>The RFA-WLGM306 Weight Lifting Gloves from RFA Gears come as the latest addition to the category which features neoprene construction, comfortable design, double layered padded palm, and velcro closure.The WLADR0208 Ankle D Ring from RFA Gears will be the best addition to your workout equipment. It features chrome plated d-ring, multi-directional cushioning, neoprene construction, and shock-absorbent padding.</p>
+								</div>
+								<div class="tabs" id="tab2">
+									<h4>Design:</h4>
+									<p>Authentic RFA gears pro designed Ankle D-Ring to maximize motion and resistance for your legs hips and gluts.</p>
+
+									<h4>Construction:</h4>
+									<p>Padded black nylon with comfortable neoprene.</p>
+
+									<h4>Toning:</h4>
+									<p>For strengthening and toning leg muscles.</p>
+
+									<h4>Universal Size:</h4>
+									<p>Adjustable one size fits all.</p>
+
+									<h4>Chrome Ring:</h4>
+									<p>With chrome plated d-ring.</p>
+
+									<h4>Cushioning:</h4>
+									<p>Multi-directional cushioning gives support and stability.</p>
+
+									<h4>Padding:</h4>
+									<p>Lined with shock-absorbent padding which enhances stability.</p>
+
+									<h4>Easy to Attach:</h4>
+									<p>A simple twin d-ring attachment that works with any carabiner or clip system on the outside.</p>
+								</div>  
+								<div class="tabs" id="tab3">
+									<p>Color: Black <br>
+									Ring Material: Chrome  <br>
+									Size: Universal Fit <br>
+									Construction: Neoprene, Padded Black Nylon
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="logo"> <a href="http://stores.ebay.com/rfagears/"> <img src="http://www.rfagears.us/ebay/images/logo.png" alt=""> </a> </div>
+							<p>We are strongly sure that term “fashion” can be applied to the gym accessories that our company offers. protection, quality, comfort and good look are four concepts that we stick to when creating our fitness accessories.</p>
+						</div>
+						<div class="col-md-4">
+							<div class="title">
+								<h2>Links</h2>
+							</div>
+							<ul class="links">
+								<li><a href="http://stores.ebay.com/rfagears/pages/business-policy">Business Policy</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/whole-sale-orders">Whole Sale Orders</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/custom-logo-order">Custom Logo Orders</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/privacy-policy">Privacy Policy</a></li>
+								<li><a href="http://stores.ebay.com/rfagears/pages/quality-policy">Quality Policy</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="title">
+								<h2>Contact Us</h2>
+							</div>
+							<ul class="links">
+								<li>1532 Ocean Ave #4k Brooklyn, <br> New York - 11230 USA </li>
+								<li>+001 646 707 7259</li>
+								<li>www.rfagears.us</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		</div>
+	</body>
+</html>
