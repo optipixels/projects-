@@ -92,13 +92,14 @@ jQuery(document).ready(function(){
     });
     
     // Comic Slider
-    $('.comic-gallery .gallery-slider ul').slick({
+    jQuery('.comic-gallery .gallery-slider ul').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.comic-gallery .gallery-thumbs ul'
+        asNavFor: '.comic-gallery .gallery-thumbs ul',
+        adaptiveHeight: true,
     });
-    $('.comic-gallery .gallery-thumbs ul').slick({
+    jQuery('.comic-gallery .gallery-thumbs ul').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.comic-gallery .gallery-slider ul',
@@ -172,11 +173,13 @@ jQuery(document).ready(function(){
     });
 
     // Masonary
-    jQuery(window).load(function(){
-        jQuery('.post-masonary').isotope({
-          // options
-          itemSelector: '.lists',
-          isOriginLeft: true
-        });
-    });
+    // if(jQuery('.post-masonary').length != 0){
+    //     jQuery(window).load(function(){
+    //         jQuery('.post-masonary').isotope({
+    //           // options
+    //           itemSelector: '.lists',
+    //           isOriginLeft: true
+    //         });
+    //     });
+    // }
 });

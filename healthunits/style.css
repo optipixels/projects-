@@ -41,7 +41,7 @@ display:none;
 .news-sec .news-list figure img{
     display: block;
     width: 100%;
-    height: 100% !important;
+   
 }
 .video-posts .post-items figure:after {
     position: absolute;
@@ -108,4 +108,126 @@ margin:0px !important;
 }
 .alm-listing li{
 	margin:0 -4px 10px 0 !important;
+}
+
+.quotes-sec blockquote cite {
+    text-align: right;
+}
+
+.tip-sec .text-area p {
+    color: #fff;
+    font-size: 22px;
+}
+.tip-sec .text-area h4 {
+    font-size: 27px;
+}
+.blog-details .quote p{
+	    font-size: 15px !important;
+		text-align: justify !important;
+ 
+}
+.banner-section .header-feature h2 {
+    font-size: 30px !important;
+    line-height: 36px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+	
+}
+
+.banner-section .header-feature {
+    position: absolute;
+    bottom: 11px !important;
+    left: 12px !important;
+    max-width: 1024px;
+    width: 654px !important;
+    padding: 0 10px 16px;
+    background: rgba(255,255,255,0.4);
+	
+}
+ 
+.tip-sec .tip-holder{
+	
+	    background: #1b97ed;
+    margin: 0 -9999px 0 0;
+	padding:0px !important;
+    padding: 16px 9999px 6px 15px;
+}
+
+.blog-details p {
+    margin: 0 21px 0px -1px;
+    text-align: justify;
+}
+.page-sidebar .widget-blog-detail time{
+	    color: #4a4a4a;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24x;
+    margin: 0 0 26px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+h2 {
+    font-size: 17px !important;
+    line-height: 22px !important;
+}
+ .tip-sec .tip-holder {
+    background: #1b97ed;
+    margin: 0 -9999px 0 0 !important;
+    padding: 100px 9999px 100px 15px !important;
+}
+.frame a {
+    color: blue;
+}
+.posts-navigation{
+	display:none;
+}
+.widget-blog-detail .attachment-nb_media_20{
+	width:65px;
+	height:65px;
+}
+.team-holder .social-icons{
+	display:block !important;
+}
+h2{
+	color:red !important;
+}
+.profile-url{
+	display:none !important; 
+}
+.profile-url li{
+	list-style:none;
+}
+@media screen and (max-width: 1199px) {
+	.profile-url{
+	display:block !important; 
+}
+		  
+}
+@media screen and (max-width: 1099px) {
+		.profile-url{
+	display:block !important; 
+}
+}
+@media screen and (max-width: 992px) {
+	
+		.profile-url{
+	display:block !important; 
+}
+}
+@media screen and (max-width: 767px) {
+	
+		.profile-url{
+	display:block !important; 
+}
+}
+@media screen and (max-width: 599px) {
+		.profile-url{
+	display:block !important; 
+}
+}
+.list-content .sharedaddy{
+	display:none !important; 
 }
