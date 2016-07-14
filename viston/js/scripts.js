@@ -1,9 +1,11 @@
 jQuery(document).ready(function(){
+    "use strict";
     new WOW().init();
     // Responsive Navigation
     mobileNav('#nav>ul', '.nav-area');
     
     function mobileNav(navTag, menuBtnPrependTo){
+        "use strict";
         jQuery(menuBtnPrependTo).prepend('<a class="menu-btn" href="#"><span></span><span></span><span></span></a>');
         jQuery('body').prepend('<div class="mobile-nav"></div>');
         jQuery('.mobile-nav ~ *').wrapAll('<div class="mobile-nav-wrap"></div>')
