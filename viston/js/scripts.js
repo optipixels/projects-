@@ -40,6 +40,25 @@ jQuery(document).ready(function(){
         });
     }
 
+    // Nav Scroll to Section
+    var windowWidth = jQuery(window).width();
+    jQuery('#nav, .mobile-nav').on("click", "a", function(e){
+        "use strict";
+        var clickedItem = jQuery(this).attr("href");
+        var isMatch = clickedItem.indexOf("#") == 0;
+        if(isMatch){
+            e.preventDefault();
+
+            var navHeight = jQuery('#nav').height();
+            if(windowWidth <= 992){
+                var Xpos = jQuery(clickedItem).offset().top;
+            }else{
+                var Xpos = jQuery(clickedItem).offset().top - navHeight;
+            }
+            jQuery('html, body').animate({ scrollTop: Xpos }, 800);   
+        }
+    });
+
     // Navigation Items Sensor
     var maxItems = 8; // Change Number of Items here
     var totalItems = jQuery('#nav>ul').find('>li').length;
@@ -50,13 +69,14 @@ jQuery(document).ready(function(){
     }
     
     // fixed nav on scrolling
-    var XposNav = $(".nav-block").offset().top;
-    $(window).scroll(function(){
-        var scrollPos = $(window).scrollTop();
+    var XposNav = jQuery(".nav-block").offset().top;
+    jQuery(window).scroll(function(){
+        "use strict";
+        var scrollPos = jQuery(window).scrollTop();
         if(scrollPos >= XposNav){
-            $(".nav-block").addClass('fixed');
+            jQuery(".nav-block").addClass('fixed');
         }else if(scrollPos < XposNav){
-            $(".nav-block").removeClass('fixed');
+            jQuery(".nav-block").removeClass('fixed');
         }
     });
     
@@ -140,7 +160,7 @@ jQuery(document).ready(function(){
     // Skill-bar
     if( jQuery(".skillbar").length != '' ){
         jQuery('.skillbar').each(function() {
-            $(this).waypoint(function(direction) {
+            jQuery(this).waypoint(function(direction) {
                 jQuery(this).find('.skillbar-bar').animate({
                     width: jQuery(this).attr('data-percent')
                 }, 2000);
