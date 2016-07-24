@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$user = 'fitfor_user'; //fitfor_user
-$pass = 'zzdN61$3'; //zzdN61$3
-$db_name = 'fitfor_db'; //fitfor_db; 
+$user = 'root'; //fitfor_user
+$pass = ''; //zzdN61$3
+$db_name = 'fitfor'; //fitfor_db; 
 
 $dbconnect = mysql_connect($host, $user, $pass);
 if($dbconnect){
