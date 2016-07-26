@@ -737,7 +737,16 @@ iframe{
     color: #fff;
     margin: 0 0 10px;
 }
-.modal-form .field{ margin: 0 0 20px; }
+.modal-content .field{ margin: 0 0 20px; }
+.modal-content .field h5{
+    margin: 0 0 5px;
+    color: #fff;
+    font-weight: 700;
+}
+.modal-content .field p{ 
+    color: #fff;
+    font-size: 16px;
+}
 .modal-form .label,
 .modal-form label{ 
     font-weight: 300;
@@ -1087,5 +1096,69 @@ iframe{
     }
     #footer .boxes .items{ min-height: 190px; }
     #footer .copy{ font-size: 12px; }
+}
+@media screen and (max-width: 767px){
+    #header.fixed .header-top,
+    #header .header-bar, 
+    #header .header-top{
+        padding: 15px;
+    }
+    #header.fixed .header-bar{ display: none; }
+    .header-top .logo{
+        float: none;
+        margin: 0 auto;
+        width: 285px;
+    }
+    .header-top .btn-area{
+        float: none;
+        text-align: center;
+    }
+    .header-top .btn-area .btn{ 
+        margin: 0 5px;
+    }
+    .stream,
+    .sample .studio, 
+    .sample .location,
+    .categories .title,
+    .categories .info{
+        padding: 15px;
+    }
+    .categories .or{ display: none; }
+    .stream .tab-list li{ width: 50%; }
+    #footer,
+    .about,
+    .call-to-action{ padding:30px 15px; }
+    .sample .ico-list li{
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+    .sample .ico-list .list-icon{ margin: 0 10px 0 0 ; }
+    .categories .info{ font-size: 16px; line-height: 26px; }
+    iframe{ height: 300px; }
+}
+@media screen and (max-width: 582px){
+    .header-top .btn-area .btn{ 
+        padding: 0 20px 4px
+    }
+    .stream .tab-content .image-area{
+        float: none;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .stream .tab-content .text-area{ padding: 0; text-align: center; }
+    .stream .tab-content{ padding: 15px; }
+    .sample .ico-list li{ 
+        text-align: center;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 0 5px;
+    }
+    .sample .ico-list .list-icon{ margin: 0 0 10px ; }
+    .about .about-block, .about .services-block{ text-align: center; }
+}
 
+@media screen and (max-width: 479px){
+    .sample .ico-list .text{ width: auto; }
 }
