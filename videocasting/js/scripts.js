@@ -2,7 +2,7 @@ jQuery(document).ready(function(){
     "use strict";
     
     // Fixed nav on scrolling
-    var XposNav = $("#header").offset().top + 50;
+    var XposNav = $(".header-bar").offset().top + 20;
     $(window).scroll(function(){
         var scrollPos = $(window).scrollTop();
         if(scrollPos >= XposNav){
