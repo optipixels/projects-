@@ -1,12 +1,12 @@
 <?php include_once ('include/header.php'); ?>
-<div class="slider">
+<!-- <div class="slider">
 	<img src="<?php echo $image_url ?>bg-banner.png" alt="">
 	<div class="desc">
 		<div class="container">
 			<h1>Process</h1>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="main">
 	<div class="container">
 		<ul class="process-section">
@@ -22,6 +22,20 @@
 						$text = $rows['text'];
 						$url = $rows['url'];
 						
+						if($i == 1){
+
+							echo '<li class="active">
+								<a href="#" class="opener">'.$i.'. '.$title.'</a>
+								<div class="slide">
+									<div class="image">
+										<img src="'.$url.'" alt="">
+									</div>
+									<div class="text-block">
+										<p>'.$text.'</p>
+									</div>
+								</div>
+							</li>';
+						}else{
 
 						echo '<li>
 								<a href="#" class="opener">'.$i.'. '.$title.'</a>
@@ -34,7 +48,7 @@
 									</div>
 								</div>
 							</li>';
-
+						}
 						$i++;
 					}
 				}else{ 

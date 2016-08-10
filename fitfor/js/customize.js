@@ -832,34 +832,8 @@ function initLightbox() {
 			overlayOpacity: 0.65,
 			overlayColor: '#000',
 			titlePosition: 'inside',
-			onComplete: function(box) {
-				if(link.attr('href').indexOf('#') === 0) {
-					jQuery('#fancybox-content').find('a.close').unbind('click.fb').bind('click.fb', function(e){
-						jQuery.fancybox.close();
-						e.preventDefault();
-					});
-				}
-			}
-		});
-	});
-}
-
-// page init
-jQuery(function(){
-	initLightbox();
-});
-
-// lightbox init
-function initLightbox() {
-	jQuery('a[rel*="lightbox"], a.lightbox').each(function(){
-		var link = jQuery(this);
-		link.fancybox({
-			padding: 10,
-			cyclic: false,
-			overlayShow: true,
-			overlayOpacity: 0.65,
-			overlayColor: '#000',
-			titlePosition: 'inside',
+			// width: 1000,
+			// autoDimensions: false,
 			onComplete: function(box) {
 				if(link.attr('href').indexOf('#') === 0) {
 					jQuery('#fancybox-content').find('a.close').unbind('click.fb').bind('click.fb', function(e){

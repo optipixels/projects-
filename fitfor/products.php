@@ -1,12 +1,12 @@
 <?php include_once ('include/header.php'); ?>
-<div class="slider">
+<!-- <div class="slider">
 	<img src="<?php echo $image_url ?>bg-banner.png" alt="">
 	<div class="desc">
 		<div class="container">
 			<h1>Products</h1>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="main">
 	<div class="container">
 		<div class="row">
@@ -75,9 +75,6 @@
 										</div>';
 									echo '<div class="popup-holder">
 										<div id="popup'.$i.'-'.$j.'" class="lightbox">
-											<div class="media">
-												<img src="'.$url.'" alt="">
-											</div>
 											<div class="text">
 												<h2>'.$title.'</h2>
 												<h3>'.$article.'</h3>';
@@ -86,7 +83,11 @@
 												}
 											echo '
 											</div>
-											<p>'.$desc.'</p>
+											<div class="media">
+												<img src="'.$url.'" alt="">
+											</div>
+											
+											
 											<a class="close" href="#"><i class="icon_close"></i></a>
 										</div>
 									</div>

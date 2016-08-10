@@ -1,12 +1,12 @@
 <?php include_once ('include/header.php'); ?>
-<div class="slider">
+<!-- <div class="slider">
 	<img src="<?php echo $image_url ?>bg-banner.png" alt="">
 	<div class="desc">
 		<div class="container">
 			<h1>Certifications</h1>
 		</div>
 	</div>
-</div>
+</div> -->
 <div id="main">
 	<div class="container">
 		<div class="row">

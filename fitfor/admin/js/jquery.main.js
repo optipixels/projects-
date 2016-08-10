@@ -302,12 +302,12 @@ $(document).ready(function(){
 		var img = $.trim($('.slider-img').val());
 		var result = '';
 		
-		if(title.length == 0){
-			result += "<p>Please Enter Title.</p>";
-		}
-		if(sub_title == ''){
-			result += "<p>Please Enter Description.</p>";
-		}
+		// if(title.length == 0){
+		// 	result += "<p>Please Enter Title.</p>";
+		// }
+		// if(sub_title == ''){
+		// 	result += "<p>Please Enter Description.</p>";
+		// }
 		if(img == ''){
 			result += "<p>Please Select Image.</p>";
 		}
@@ -585,9 +585,9 @@ $(document).ready(function(){
 		if(featured.length == 'select'){
 			result += "<p>Please Select Featured.</p>";
 		}
-		if(desc.length == 0){
-			result += "<p>Please Enter Description.</p>";
-		}
+		// if(desc.length == 0){
+		// 	result += "<p>Please Enter Description.</p>";
+		// }
 		if(img == ''){
 			result += "<p>Please Select Image.</p>";
 		}
