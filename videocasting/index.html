@@ -17,7 +17,7 @@
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Header -->
-        <header id="header">
+        <header id="header" class="fixed">
             <div class="header-top">
                 <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
                 <div class="btn-area">
@@ -33,7 +33,7 @@
         <div id="main">
             <section class="categories">
                 <span class="or"><span>OR</span></span>
-                <div class="studio col-md-6 col-sm-12 col-xs-12">
+                <div class="studio col-md-6 col-sm-12 col-xs-12" data-toggle="modal" data-target="#studio">
                     <div class="title">
                         <span class="icon"><img src="images/ico-studio.png" alt=""></span>
                         <h3>Live Studio Streaming</h3>
@@ -42,11 +42,11 @@
                         <p>Our Raleigh, NC based streaming studio allows you the ability to bring your message to a global online audience live from our state-of-the-art studio.</p>
                         <div class="image-area">
                             <img src="images/img3.png" alt="">
-                            <a href="on-studio.html" class="more"><span>Learn More</span></a>
+                            <a href="#" class="more"><span>Learn More</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="location col-md-6 col-sm-12 col-xs-12">
+                <div class="location col-md-6 col-sm-12 col-xs-12" data-toggle="modal" data-target="#location">
                     <div class="title">
                         <span class="icon"><img src="images/ico-location.png" alt=""></span>
                         <h3>Live On Location Streaming</h3>
@@ -55,7 +55,7 @@
                         <p>Need webcasting from your location in DC, NC, SC or VA? We’ll stream live from your office, conference or hotel. Professional multi-camera production on-site.</p>
                         <div class="image-area">
                             <img src="images/img4.png" alt="">
-                            <a href="on-location.html" class="more"><span>Learn More</span></a>
+                            <a href="#" class="more"><span>Learn More</span></a>
                         </div>
                     </div>
                 </div>
@@ -221,20 +221,44 @@
                 <div class="col-md-5 col-sm-12 col-xs-12 pull-right services-block">
                     <h3>Live Video Production Services For:</h3>
                     <ul>
-                        <li>Company Town Halls</li>
-                        <li>HR Meetings and Updates</li>
-                        <li>Training Seminars and Conferences</li>
-                        <li>Software Demonstrations and Training</li>
-                        <li>Parades, Festivities and Celebrations</li>
-                        <li>E-Learning video production</li>
-                        <li>Legal Webinars and Seminars</li>
-                        <li>Quarterly Updates</li>
+                        <li>
+                            <a href="#">Company Town Halls</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">HR Meetings and Updates</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">Training Seminars and Conferences</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">Software Demonstrations and Training</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">Parades, Festivities and Celebrations</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">E-Learning video production</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">Legal Webinars and Seminars</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
+                        <li>
+                            <a href="#">Quarterly Updates</a>
+                            <p class="text">Dynamic Videocasting specializes in affordable live event video production for all of NC, SC, VA and Washington DC.</p>
+                        </li>
                     </ul>
                 </div>
             </section>
             <section class="call-to-action">
                 <h1>Ready to get started? Request a quote.</h1>
-                <a class="btn" href="#">Get in Touch</a>
+                <a class="btn" data-toggle="modal" data-target="#quote" href="#">Get in Touch</a>
             </section>
         </div>
         <!-- Footer -->
@@ -265,6 +289,82 @@
             </div>
             <span class="copy">&copy; Dynamic Videocasting 2016</span>
         </footer>
+        <div id="location" class="modal fade modal-samples" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="categories details">
+                        <div class="location active">
+                            <div class="title loc-title">
+                                <span class="icon"><img src="images/ico-location.png" alt=""></span>
+                                <h3>Live On Location Streaming</h3>
+                            </div>
+                            <div class="info">
+                                <div class="image-area col-md-6 col-sm-12 col-xs-12">
+                                    <h3>On Location Sample Video</h3>
+                                    <div class="vid-sec">
+                                        <a href="#" data-toggle="modal" data-target="#video2"><img src="images/laptop-vid2.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="text-area col-md-6 col-sm-12 col-xs-12">
+                                    <ul>
+                                        <li><span>1</span>We come to your location in DC, NC, VA or SC</li>
+                                        <li><span>2</span>Production switched live with multiple cameras</li>
+                                        <li><span>3</span>All you need to provide is an internet connection!</li>
+                                        <li><span>4</span>Setup from your office, board room, convention hall hotel space, tradeshow, etc.</li>
+                                        <li><span>5</span>Reliable, experienced producer and crews</li>
+                                    </ul>
+                                    <div class="image-area">
+                                        <img src="images/img7.png" alt="">
+                                        <p>Streams live to desktop, laptop and mobile devices</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="studio" class="modal fade modal-samples" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="categories details">
+                        <div class="studio active">
+                            <div class="title std-title">
+                                <span class="icon"><img src="images/ico-studio.png" alt=""></span>
+                                <h3>On studio Streaming</h3>
+                            </div>
+                            <div class="info">
+                                <div class="image-area col-md-6 col-sm-12 col-xs-12">
+                                    <h3>Studio Sample Video</h3>
+                                    <div class="vid-sec">
+                                        <a href="#" data-toggle="modal" data-target="#video1"><img src="images/laptop-vid2.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="text-area col-md-6 col-sm-12 col-xs-12">
+                                    <ul>
+                                        <li><span>1</span>We come to your studio in DC, NC, VA or SC</li>
+                                        <li><span>2</span>Production switched live with multiple cameras</li>
+                                        <li><span>3</span>All you need to provide is an internet connection!</li>
+                                        <li><span>4</span>Setup from your office, board room, convention hall hotel space, tradeshow, etc.</li>
+                                        <li><span>5</span>Reliable, experienced producer and crews</li>
+                                    </ul>
+                                    <div class="image-area">
+                                        <img src="images/img8.png" alt="">
+                                        <p>Streams live to desktop, laptop and mobile devices</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Modal -->
     <div id="quote" class="modal fade" role="dialog">
@@ -329,6 +429,7 @@
                             </div>
                         </fieldset>
                     </form>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
                 </div>
             </div>
         </div>
@@ -368,26 +469,31 @@
                             </div>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
                 </div>
             </div>
         </div>
     </div>
-    <div id="video1" class="modal fade" role="dialog">
+    <div id="video1" class="modal fade modal-video" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <iframe width="100%" height="600" src="https://www.youtube.com/embed/G2Rhh_4GZmU" frameborder="0" allowfullscreen></iframe>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
             </div>
         </div>
     </div>
-    <div id="video2" class="modal fade" role="dialog">
+    <div id="video2" class="modal fade modal-video" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <iframe width="100%" height="600" src="https://www.youtube.com/embed/G2Rhh_4GZmU" frameborder="0" allowfullscreen></iframe>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close Window</button>
             </div>
         </div>
     </div>
+    
+            
     <!-- Include the jQuery Library -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-3.0.0.min.js"><\/script>')</script>

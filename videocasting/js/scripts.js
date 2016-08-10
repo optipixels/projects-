@@ -2,15 +2,15 @@ jQuery(document).ready(function(){
     "use strict";
     
     // Fixed nav on scrolling
-    var XposNav = $(".header-bar").offset().top + 20;
-    $(window).scroll(function(){
-        var scrollPos = $(window).scrollTop();
-        if(scrollPos >= XposNav){
-            $("#header").addClass('fixed');
-        }else if(scrollPos < XposNav){
-            $("#header").removeClass('fixed');
-        }
-    });
+    // var XposNav = $("#header").offset().top;
+    // $(window).scroll(function(){
+    //     var scrollPos = $(window).scrollTop();
+    //     if(scrollPos >= XposNav){
+    //         $("#header").addClass('fixed');
+    //     }else if(scrollPos < XposNav){
+    //         $("#header").removeClass('fixed');
+    //     }
+    // });
 
     // Quote Form Field
     jQuery('.field.events').hide();
@@ -50,6 +50,13 @@ jQuery(document).ready(function(){
             jQuery(parentElem+'>.tab-content').find('.tab').fadeOut();
             jQuery(activeElem).delay(400).fadeIn();
         }
+    });
+
+    // Services Accordian
+
+    jQuery('.services-block ul').on('click', 'a', function(e){
+        e.preventDefault();
+        jQuery(this).siblings('.text').slideToggle();
     });
     
 });
