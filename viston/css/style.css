@@ -1,3 +1,17 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Google Fonts / Font Face
+2. Typography and Reset CSS
+3. Rich Editor
+4. Wordpress Reset
+5. Header / #header
+6. Navigation / #nav
+7. Main / #main
+8. Content / #content
+9. Sidebar / #sidebar
+10. Footer / #footer
+-------------------------------------------------------------------*/
 /* ------------ 
    Google Fonts
    ------------ */
@@ -831,26 +845,27 @@ a img.aligncenter {
 /* slider arrows */
 .slider .slick-arrow{
 	position: absolute;
-	left: -60px;
+	left: 0;
 	top:50%;
 	z-index: 999;
 	font-size: 0;
 	line-height: 0;
-	width:69px;
-	height: 69px;
+	width:48px;
+	height: 48px;
 	background: #fff;
 	border:1px solid #fff;
     border-radius:2px;
+    margin: 0;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-ms-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	-moz-transform: rotate(45deg) translateY(-50%);
-    -webkit-transform: rotate(45deg) translateY(-50%);
-    -o-transform: rotate(45deg) translateY(-50%);
-    -ms-transform: rotate(45deg) translateY(-50%);
-    transform: rotate(45deg) translateY(-50%);
+	-moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .slider .slick-arrow:after{
 	position: absolute;
@@ -860,33 +875,16 @@ a img.aligncenter {
 	font-size: 26px;
 	line-height: 44px;
 	font-family: 'FontAwesome';
-	width:96px;
+	width:46px;
 	text-align: center;
     color: #17212c;
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
 }
 .slider .slick-next:after{ 
     content: '\f105';
-    width:44px;
-    line-height: 44px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 .slider .slick-next{
     left: auto;
-    right:-60px;
-    -moz-transform: rotate(-45deg) translateY(-50%);
-    -webkit-transform: rotate(-45deg) translateY(-50%);
-    -o-transform: rotate(-45deg) translateY(-50%);
-    -ms-transform: rotate(-45deg) translateY(-50%);
-    transform: rotate(-45deg) translateY(-50%);
+    right:0;
 }
 .slider .slick-arrow:hover{
     background:none;
@@ -2684,12 +2682,11 @@ a img.aligncenter {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         overflow: auto;
-        transition-duration: 0.8s;
-        -webkit-transition-duration: 0.8s;
-        -o-transition-duration: 0.8s;
-        transition-timing-function: cubic-bezier(0,.94,.58,.87);
-        -webkit-transition-timing-function: cubic-bezier(0,.94,.58,.87);
-        -o-transition-timing-function: cubic-bezier(0,.94,.58,.87);
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
     }
     .mobile-nav ul{
         margin: 0;
@@ -2702,12 +2699,11 @@ a img.aligncenter {
         display: block;
         margin: 0 0 10px;
         color: #fff;
-        transition-duration: 0.8s;
-        -webkit-transition-duration: 0.8s;
-        -o-transition-duration: 0.8s;
-        transition-timing-function: cubic-bezier(0,.94,.58,.87);
-        -webkit-transition-timing-function: cubic-bezier(0,.94,.58,.87);
-        -o-transition-timing-function: cubic-bezier(0,.94,.58,.87);
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
     }
     .mobile-nav ul .open>a,
     .mobile-nav ul a:hover{
