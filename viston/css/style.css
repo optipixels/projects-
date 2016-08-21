@@ -2645,6 +2645,26 @@ a img.aligncenter {
     h1{
         font-size: 36px;
         line-height: 38px;
+    } 
+    h2 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    h5 {
+        font-size: 14px;
+        line-height: 117px;
+    }
+    h6 {
+        font-size: 13px;
+        line-height: 16px;
     }
     .filter .filter-area,
     .filter .info{
@@ -2772,71 +2792,44 @@ a img.aligncenter {
         -o-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
     }
-/*
-    .slicknav_menu {
-        display: block;
-        float:left;
-        background: none;
-        position: relative;
-        padding: 21px 0 21px 20px !important;
-        background: none !important;
-    }
-    .nav-block.fixed .slicknav_menu{
-        padding: 11px 0 11px 20px !important;
-    }
-    .slicknav_menu .slicknav_nav {
-        background: #fff;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 290px;
-        padding: 15px;
-        max-height: 250px;
-        overflow: auto;
-        -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    }
-    .slicknav_menu .slicknav_nav li {
-        margin: 0 0 10px;
-    }
-    .slicknav_menu .slicknav_nav li>a {
-        border: 2px solid #b30121;
-        color: #17212c;
-        font-weight: 500;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        margin: 5px 0 !important;
-    }
-    .slicknav_menu .slicknav_nav li>a a {
-        color: #17212c;
-    }
-    .slicknav_menu .slicknav_nav li a:hover a,
-    .slicknav_menu .slicknav_nav li a:hover {
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        background: #b30121;
-        color: #fff !important;
-    }
-    .slicknav_menu .slicknav_btn {
-        background-color: #b30121;
-        border-radius: 2px;
+    #main .section-title{ margin-bottom: 30px; }
+    #main{ padding: 30px 0; }
+    .testimonials{ padding: 30px 0 60px; }
+    .news,
+    .counter-sec{ 
+        padding: 30px 0 0; 
         margin: 0;
-        text-decoration: none;
-        text-shadow: none;
-        padding: 10px 10px;
     }
-    .slicknav_nav .slicknav_arrow {
-        font-size: 18px !important;
-        float: right;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+    #footer .footer-bottom,
+    #footer .contact-sec,
+    .contact,
+    .newsletter,
+    .shop,
+    .text-block2,
+    .why-us,
+    .portfolio,
+    .about,
+    .services{ 
+        padding: 30px 0;
+        margin: 0;
     }
-*/
+    .text-block .image-area figure{
+        margin: 0;
+        padding: 30px 0;
+    }
+    .text-block .text-area{
+        padding: 30px 15px;
+    }
+    .counter-sec ul li{
+        margin: 0 30px 30px;
+    }
+    .services .items,
+    .shop .items,
+    .news article{ margin-bottom: 30px; }
+    .widget-area{ padding: 30px 0; }
+    .sidebar{ padding-top: 15px; }
+    .widgets .widget{ margin: 0 0 20px; }
+    #footer .social-icons{ margin: 0 0 20px; }
 }
 @media screen and (max-width: 767px){
     #header .header-top{ text-align: center; }
@@ -2908,6 +2901,7 @@ a img.aligncenter {
         float: none;
         display: inline-block;
         vertical-align: top;
+        margin: 12px 0 0;
     }
     #footer .contact-sec .text{
         display: inline-block;
