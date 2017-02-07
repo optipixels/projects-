@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Particles</title>
+		<!-- <link type="text/css" href="styles.css" rel="stylesheet" media="screen" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"> 
+		<style>
+			html{color:#000;background:#f4f4f4;}
+a{cursor:pointer;}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+/* h1,h2,h3,h4,h5,h6{font-size:100%;} */
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;outline-style:none;outline-width:0pt;}
+legend{color:#000;}
+a:focus,object,h1,h2,h3,h4,h5,h6{-moz-outline-style: none; border:0px;}
+/*input[type="Submit"]{cursor:pointer;}*/
+strong {font-weight: bold;}
+
+
+body, button {
+	/*overflow: hidden;*/
+	font-family: Helvetica, Arial, sans-serif;
+	color: #333333;
+	font-size: 11px;
+
+}
+/*a {
+	color: #333333;
+	background-color: #FFFECF;
+	text-decoration: none;
+	font-style: italic;
+}*/
+/*a:hover {
+	color: #FFFECF;
+	background-color: #333333;
+}*/
+#panel {
+	position: absolute; 
+	padding: 5px;
+}
+#panel p {
+	background-color: #FFFECF;
+	padding: 0px 5px 5px 5px;
+}
+#panel h2 {
+	font-size: 12px;
+	background-color: #FFFECF;
+	padding: 5px 5px 5px 5px;
+}
+
+button {
+	background-color: #FFFECF;
+	border: none;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#tweet {
+	margin: 0 15%;
+	position: absolute;
+	color: #23A1A1;
+	font-size: 26px;
+	text-align: center;
+	width: 70%;
+}
+#tweet a {
+	color: #018282;
+	font-style: italic;
+	text-decoration: none;
+}
+#tweet a:hover {
+	background-color: #DEF2FF;
+}
+#tweet p.author {
+	padding-top: 10px;
+	font-size: 11px;
+}
+
+/*h2 {
+	-moz-user-select: none;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 250px;
+	position: absolute;
+}*/
+.video-holder{
+      	position: fixed;
+      	left: 0;
+      	top:0;
+      	width: 100% !important;
+      	height: 100% !important;
+      	/*display: none;*/
+      }
+.video-holder:after{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	/*background: url('polygon.png') no-repeat;
+	background-size: 100% auto;*/
+	background: rgba(0,0,0,0.4);
+	content: '';
+	/*z-index: 9999;*/
+}        
+.video{
+      	position: absolute;
+      	left: 0;
+      	top:0;
+      	width: 100% !important;
+      	height: auto !important;
+      	/*display: none;*/
+      }
+#canvasElement{
+	position: fixed;
+	z-index: 10;
+}
+/* CSS */
+.hsContainer {
+    /*display: table;
+    table-layout: fixed;*/
+    /*width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;*/
+    /*opacity: 0;*/
+}
+.hsContent {
+    /*max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center*/
+}
+.bcg {
+    /*background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;*/
+}
+.intro{ z-index: 99999 !important; }
+.content,
+.intro{ 
+	position: fixed;  
+	z-index: 9999;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.content .container,
+.intro .container{ position: relative; }
+.content .container:after,
+.intro .container:after{
+	background: url('polygon-80.png') no-repeat;
+	background-size:cover; 
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: '';
+	z-index: -1;
+}
+.intro h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #333;
+}
+.intro h2 span{
+	display: block;
+	font-size: 54px;
+}
+.intro a{
+	display: inline-block;
+	vertical-align: middle;
+	color: #333;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px;
+	background: rgba(255,255,255,0.2);
+}
+.intro .container{
+	max-width: 550px;
+}
+/*.content p{ 
+	opacity: 0;
+	position: fixed;
+}*/
+
+
+		</style>
+    </head>
+    <body>
+    	<!-- <div id="panel">
+			<h2><a href="../../../">Experiments</a> / Particles / 02</h2>
+		</div> -->
+		<div class="video-holder">
+		<video muted="" autoplay="" loop="" preload="auto" class="video" src="http://mounier.co/wp-content/uploads/2016/03/mounierbg.mp4">
+			<source src="http://mounier.co/wp-content/uploads/2016/03/mounierbg.mp4" type="video/mp4"></source></video>
+		</div>
+		<canvas id="canvasElement" width="100" height="100">Your browser does not support the Canvas element.</canvas>
+		<!-- HTML -->
+		<div class="intro" style="z-index: 9999;" data-0="opacity:1; top:50%;" data-400="position:fixed; top[quadratic]:40%; opacity[quadratic]:0;">
+			<div class="container">
+				<h2>TECHNOLOGY MEETS INTERIOR DESIGN <span>Coming Soon</span></h2>
+				<a href="mailto:info@mounier.co">info@mounier.co</a>
+			</div>
+		</div>
+		<div class="content" data-400="opacity:0; top:60%; position:fixed;" data-1200="position:fixed; top[quadratic]:50%; opacity[quadratic]:1;" data-2000="position:fixed; top[quadratic]:50%; opacity[quadratic]:1;" data-2800="position:fixed; top[quadratic]:40%; opacity[quadratic]:0;">
+			<div class="container">
+				<p>
+					At Mounier we understand that the 21st Century design aesthetic demands a paradigm shift from style for style’s sake to style in harmonic synergy with cutting edge construction protocols and products that generate eco-friendly and energy efficient sustainability. By embracing rather than resisting the constantly evolving high-tech innovations in home design, lighting, and security, Mounier creates for its clients cost efficient and user-friendly solutions to home design in the new era of remote, smart-tech control of every aspect of their home and property
+				</p>
+			</div>
+		</div>
+		<div class="content" data-3000="opacity:0; top:80%; position:fixed;" data-3800="position:fixed; top[quadratic]:50%; opacity[quadratic]:1;" data-4600="position:fixed; top[quadratic]:50%; opacity[quadratic]:1;" data-5400="position:fixed; top[quadratic]:20%; opacity[quadratic]:0;">
+			<div class="container">
+				<p>
+					Mounier sets the standard in both the understanding and implementation of these new technologies with detailed research and hands-on trial of every product and construction process we recommend. Beyond our understanding of modern home technology is our impeccable perspective of what your home décor can be based on your specific taste and style intuition. We are Interior Design Artisans, not Interior Decorators! We do not decorate the interior of your home, we design the interior of your home based on your taste of the home you desire with our international design sensibility of Euro-Asian-Middle Eastern fusion style or a designer/client collaborative effort complimentary to the look you want to achieve! Mounier has access to pieceart artisans from street markets in Kashmir to fabric silk-screeners in India to classical art dealers in Paris and London. We will find for you that one last piece that makes the room complete!
+				</p>
+			</div>
+		</div>
+		<!-- <div id="easing_wrapper" data-0="opacity:0;" data-100="opacity:1; position:fixed;" data-220="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-590="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-1000="top:0%;" data-1200="">
+		<div id="easing">
+			<h2>easing?</h2>
+			<p>sure.</p>
+			<p>let me dim the <span data-390="" data-490="color[swing]:rgb(0,0,0);" data-590="color:rgb(255,255,0);">lights</span> for this one...</p>
+			<p data-5900="opacity:0;font-size:100%;" data-650="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
+		</div>
+		</div> -->
+		<!-- Load scripts -->
+		<script type="text/javascript">
+			
+			var particles = [];
+			for( var i = 0; i < 100; i++ ) {
+				particles.push( { 
+					x:Math.random()*window.innerWidth, 
+					y:Math.random()*window.innerHeight, 
+					vx:(Math.random()*2)-1, 
+					vy:(Math.random()*2-1),
+					history: [],
+					//size : 80,
+					size: 4+Math.random()*6,
+					// color: Math.random() > .5 ? "#000000" : Math.random() > .5 ? "#FF0000" : "#FFFF00"
+					color: Math.random() > .5 ? "#333333" : Math.random() > .5 ? "#777777" : "#aaaaaa"
+					// color: "#ffffff"
+				} );
+			}
+			
+			var mouse = { x: 0, y: 0 };
+			
+			var canvas = document.getElementById('canvasElement');
+			
+			if (canvas && canvas.getContext) {
+				var context = canvas.getContext('2d');
+				
+				Initialize();
+			}
+			
+			function Initialize() {
+				canvas.addEventListener('mousemove', MouseMove, false);
+				window.addEventListener('resize', ResizeCanvas, false);
+				setInterval( TimeUpdate, 20 );
+				
+				context.beginPath();
+				
+				ResizeCanvas();
+			}
+			
+			function TimeUpdate(e) {
+				
+				context.clearRect(0, 0, window.innerWidth, window.innerHeight);
+				
+				for( var i = 0; i < particles.length; i++ ) {
+					particles[i].x += particles[i].vx;
+					particles[i].y += particles[i].vy;
+					
+					if( particles[i].x > window.innerWidth ) {
+						particles[i].vx = -1-Math.random();
+					}
+					else if ( particles[i].x < 0 ) {
+						particles[i].vx = 1+Math.random();
+					}
+					else {
+						particles[i].vx *= 1 + (Math.random()*0.005);
+					}
+					
+					if( particles[i].y > window.innerHeight ) {
+						particles[i].vy = -1-Math.random();
+					}
+					else if ( particles[i].y < 0 ) {
+						particles[i].vy = 1+Math.random();
+					}
+					else {
+						particles[i].vy *= 1 + (Math.random()*0.005);
+					}
+					
+					context.strokeStyle = particles[i].color;
+					context.beginPath();
+					for( var j = 0; j < particles[i].history.length; j++ ) {
+						context.lineTo( particles[i].history[j].x, particles[i].history[j].y );
+					}
+					context.stroke();
+					
+					particles[i].history.push({	x: particles[i].x, y: particles[i].y });
+					if( particles[i].history.length > 45 ) {
+						particles[i].history.shift();
+					}
+					
+					var distanceFactor = DistanceBetween( mouse, particles[i] );
+					distanceFactor = Math.max( Math.min( 15 - ( distanceFactor / 10 ), 10 ), 1 );
+					
+					context.fillStyle = particles[i].color;
+					context.beginPath();
+					 //context.arc(particles[i].x,particles[i].y,particles[i].size*distanceFactor,0,Math.PI*2,true);
+					 // context.arc(particles[i].x,particles[i].y,particles[i].size,0,Math.PI*2,true);
+					 // context.strokeRect(particles[i].x,particles[i].y,particles[i].size*4,particles[i].size*distanceFactor);
+					context.closePath();
+					//context.fill();
+					context.stroke();
+					//Draw(1, 1);
+					
+				}
+			}
+			
+			function MouseMove(e) {
+				mouse.x = e.layerX;
+				mouse.y = e.layerY;
+				
+				//context.fillRect(e.layerX, e.layerY, 5, 5);
+				//Draw( e.layerX, e.layerY );
+			}
+			
+			function Draw( x, y ) {
+				context.strokeStyle = '#ff0000';
+				context.lineWidth = 2;
+				context.lineTo(x, y);
+				context.stroke();
+			}
+			
+			function ResizeCanvas(e) {
+				canvas.width = window.innerWidth;
+				canvas.height = window.innerHeight;
+			}
+			
+			function DistanceBetween(p1,p2) {
+				var dx = p2.x-p1.x;
+				var dy = p2.y-p1.y;
+				return Math.sqrt(dx*dx + dy*dy);
+			}
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script src="scripts/skrollr.js"></script>
+		<script>
+			( function( $ ) {
+			    // Init Skrollr
+			    var s = skrollr.init({
+			        render: function(data) {
+			            //Debugging - Log the current scroll position.
+			            //console.log(data.curTop);
+			        }
+			    });
+			} )( jQuery );
+		</script>
+    </body>
+</html>
